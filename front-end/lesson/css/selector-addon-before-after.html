@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before After Selector</title>
+</head>
+<body>
+    <style>
+        h2:before {
+            content: "✪";
+            color: red;
+        }
+        h2:after {
+            content: "✪";
+            color: red;
+        }
+        .list-post a:after {
+            content: url("https://i0.wp.com/ncrefuge.org/wp-content/uploads/2019/11/new-icon.png?fit=300%2C158&ssl=1&w=640");
+            
+        }
+    </style>
+    <h2>Before After Selector</h2>
+    <ul class="list-post">
+        <li><a href="" class="new">Bài viết số 1</a></li>
+        <li><a href="">Bài viết số 2</a></li>
+        <li><a href="">Bài viết số 3</a></li>
+        <li><a href="">Bài viết số 4</a></li>
+    </ul>
+</body>
+</html>

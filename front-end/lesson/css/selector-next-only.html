@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector next only</title>
+</head>
+
+<body>
+    <style>
+        article img {
+            max-height: 500px;
+            width: auto;
+        }
+        article img+p {
+            font-style: italic;
+        }
+    </style>
+    <article>
+        <h1>Selector next only</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda qui iure tempora esse voluptatum
+            provident, optio quisquam neque minus quidem.</p>
+        <img src="images/flower.jpg" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sunt ipsum cum omnis illum, quam
+            voluptatibus. Maiores perferendis nihil aspernatur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, eligendi! Exercitationem, blanditiis, unde
+            numquam voluptatibus ipsa reiciendis nisi, voluptate ipsum fugit quae dolorum accusamus sequi atque ad ullam
+            et eaque.</p>
+    </article>
+</body>
+
+</html>

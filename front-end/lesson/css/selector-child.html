@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selector con cháu - hậu duệ</title>
+    <title>Child Selector</title>
 </head>
+
 <body>
     <style>
-        #main-menu>li>a {
-            color: #f00;
-            font-size: 18px;
+        /* ul li:first-child {
+            font-weight: bold;
+            color: red;
+        }
+
+        ul li:last-child {
+            font-weight: bold;
+            color: green;
+        }
+
+        ul li:nth-child(odd) {
+            color: green;
+            font-weight: bold;
+        }
+        ul li:nth-child(even) {
+            color: brown;
+            font-weight: bold;
+        } */
+
+        ul li:nth-child(4n) {
+            color: brown;
+            font-weight: bold;
         }
     </style>
-    <ul id="main-menu">
-        <li><a href="">Trang chủ</a></li>
-        <li><a href="">Giới thiệu</a></li>
-        <li><a href="">Sản phẩm</a>
-            <ul class="sub-menu">
-                <li><a href="">Máy tính</a></li>
-                <li><a href="">Điện thoại</a></li>
-            </ul>
-        </li>
-        <li><a href="">Liên hệ</a></li>
+    <h1>Child Selector</h1>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
     </ul>
 
-    <a href="">Unitop.vn</a>
 </body>
+
 </html>

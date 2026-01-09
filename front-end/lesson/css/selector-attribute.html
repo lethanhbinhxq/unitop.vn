@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selector</title>
+</head>
+
+<body>
+    <style>
+        a[href] {
+            color: cyan;
+        }
+
+        /* a[href="http://unitop.vn"] {
+            color: brown;
+        } */
+        /* a[href*="unitop"] {
+            color: brown;
+        } */
+        a[href$=".vn"] {
+            color: brown;
+        }
+    </style>
+    <h1>Attribute selector</h1>
+    <a href="http://unitop.vn">PHP Master</a> <br>
+    <a href="http://google.com">Bootstrap AZ</a>
+</body>
+
+</html>
