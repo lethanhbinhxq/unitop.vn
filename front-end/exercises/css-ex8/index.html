@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hiển thị danh sách sản phẩm - Hiệu ứng CSS</title>
+    <title>Hiển thị danh sách sản phẩm</title>
 </head>
 
 <body>
@@ -42,17 +42,9 @@
             padding-bottom: 15px;
             position: relative;
             text-align: center;
-            overflow: hidden;
         }
         ul.list-product li .product-item:hover {
             border: 1px solid orange;
-            transition: all 1s;
-        }
-        .product-item:hover img {
-            transform: rotate(1deg);
-        }
-        .product-item:hover .buy-now {
-            bottom: 0;
         }
         .text-uppercase {
             text-transform: uppercase;
@@ -71,12 +63,7 @@
             margin: 15px;
         }
         .buy-now {
-            background-color: orange;
-            color: white;
-            padding: 15px;
-            position: absolute;
-            width: 100%;
-            bottom: -50px;
+            color: orangered;
         }
         .product-name {
             color: gray;
@@ -85,7 +72,7 @@
     </style>
     <div id="wrapper">
         <header>
-            <h1 class="text-uppercase text-center">Bài tập 8 - Áp dụng hiệu ứng Css</h1>
+            <h1 class="text-uppercase text-center">Bài tập 7 - Hiển thị danh sách sản phẩm</h1>
         </header>
         <ul class="list-product">
             <li>
