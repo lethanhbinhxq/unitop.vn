@@ -42,9 +42,17 @@
             padding-bottom: 15px;
             position: relative;
             text-align: center;
+            overflow: hidden;
+            transition: all 1s;
         }
         ul.list-product li .product-item:hover {
             border: 1px solid orange;
+        }
+        .product-item:hover img {
+            transform: rotate(1deg);
+        }
+        .product-item:hover .buy-now {
+            bottom: 0px;
         }
         .text-uppercase {
             text-transform: uppercase;
@@ -63,7 +71,12 @@
             margin: 15px;
         }
         .buy-now {
-            color: orangered;
+            color: white;
+            background-color: orange;
+            padding: 15px;
+            position: absolute;
+            width: 100%;
+            bottom: -50px;
         }
         .product-name {
             color: gray;
@@ -72,7 +85,7 @@
     </style>
     <div id="wrapper">
         <header>
-            <h1 class="text-uppercase text-center">Bài tập 7 - Hiển thị danh sách sản phẩm</h1>
+            <h1 class="text-uppercase text-center">Bài tập 8 - Áp dụng hiệu ứng Css</h1>
         </header>
         <ul class="list-product">
             <li>
@@ -128,7 +141,7 @@
         </ul>
 
         <footer>
-            <p>Unitop - Học lập trình web đi làm</p>
+            <p class="text-center">Unitop - Học lập trình web đi làm</p>
         </footer>
     </div>
 </body>
