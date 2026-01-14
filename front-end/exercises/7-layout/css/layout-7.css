@@ -1,0 +1,30 @@
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    flex: 100%;
+    padding: 15px;
+}
+
+#wp-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 100%;
+    min-height: 768px;
+}
+
+#left-sidebar, #right-sidebar {
+    flex: 20%;
+}
+
+#content {
+    flex: 60%;
+}
+
+footer {
+    flex: 100%;
+    padding: 5px;
+}

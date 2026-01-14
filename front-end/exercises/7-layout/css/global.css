@@ -1,0 +1,35 @@
+.text-center {
+    text-align: center;
+}
+
+.text-20px {
+    font-size: 20px;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.bg-blue {
+    background-color: #0073aa;
+}
+
+.bg-dark {
+    background-color: #232323;
+}
+
+.bg-gray {
+    background-color: #e1e1e1;
+}
+
+.bg-light-gray {
+    background-color: #f4f4f4;
+}
+
+.text-white {
+    color: #f8f8f8;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
