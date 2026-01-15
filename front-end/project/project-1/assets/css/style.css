@@ -1,0 +1,100 @@
+header {
+    background: #23282d;
+    padding: 15px;
+}
+
+#wp-content {
+    background: white;
+}
+
+input#search-input {
+    background: #131619;
+    border: none;
+    width: 250px;
+    height: 40px;
+    color: #909090;
+    padding: 12px;
+    top: 0px;
+    right: 0px;
+}
+
+input#search-input:focus {
+    outline: none;
+    padding: 12px;
+}
+
+#wp-logo-search {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#search {
+    position: relative;
+}
+
+#search-icon {
+    color: #a2a1a1;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+}
+
+#wp-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+}
+
+#navbar ul {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    color: #eeeeee;
+    margin-right: 40px;
+}
+
+.nav-item:hover {
+    color: #4db2ec;
+    text-decoration: none;
+}
+#nav-decor {
+    background-color: #ff2d2d;
+    width: 10px;
+    height: 35px;
+}
+
+#top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#about {
+    flex: 40%;
+}
+#about h3, #follow h3 {
+    color: #f6f6f6;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#about p {
+    color: #f6f6f6;
+}
+
+#follow {
+    flex: 20%;
+}
+
+#footer-logo {
+    flex: 20%;
+}
+footer {
+    background: #2e2f30;
+}
