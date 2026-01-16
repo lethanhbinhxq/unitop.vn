@@ -1,12 +1,21 @@
+/* ============== HEADER ============== */
+
 header {
     background: #23282d;
-    padding: 15px;
     flex: 100%;
 }
 
-#wp-content {
-    background: white;
+/* ----------- Logo & Search ----------- */
+
+#wp-header {
+    margin-bottom: 10px;
 }
+
+#header {
+    margin-top: 28px;
+}
+
+/* Search */
 
 input#search-input {
     background: #131619;
@@ -24,39 +33,46 @@ input#search-input:focus {
     padding: 12px;
 }
 
-#wp-logo-search {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
 #search {
     position: relative;
 }
 
-#search-icon {
-    color: #a2a1a1;
+#search button {
     position: absolute;
-    top: 12px;
-    right: 16px;
+    top: 0px;
+    right: 0;
+    padding: 7px 10px;
+    background-color: #131619;
+    border: none;
 }
 
-#wp-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 35px;
+#search ::placeholder {
+    color: #909090;
 }
+
+#search-icon {
+    color: #a2a1a1;
+}
+
+/* ----------- Nav bar ----------- */
 
 .navbar ul {
     padding: 0px;
     list-style: none;
-    display: flex;
 }
 
 .nav-item {
     color: #eeeeee;
-    margin-right: 40px;
+    padding: 6px 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar ul li:first-child a {
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 .nav-item:hover {
@@ -76,6 +92,10 @@ input#search-input:focus {
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
+}
+
+#wp-content {
+    background: white;
 }
 
 #about {
@@ -159,7 +179,7 @@ footer {
 img:hover {
     transform: scale(1.05);
     transition: all 0.3s;
-    
+
 }
 
 #feature hr {
@@ -234,6 +254,7 @@ ul#post-list {
 .post-img {
     flex: 30%;
 }
+
 .post-img img {
     margin-right: 30px;
 }
@@ -242,21 +263,25 @@ ul#post-list {
     font-size: 21px;
     color: #111111;
 }
+
 .post-title:hover {
     color: #4db2ec;
     text-decoration: none;
 }
+
 .post-author {
     color: #111111;
     font-weight: 600px;
     font-size: 11px;
     margin-right: 12px;
 }
+
 .post-date {
     color: #aaaaaa;
     font-weight: 600px;
     font-size: 11px;
 }
+
 .post-info {
     flex: 60%;
 }
@@ -294,7 +319,8 @@ ul#post-list {
     margin-top: 20px;
 }
 
-ul#fav-list, ul#num-list {
+ul#fav-list,
+ul#num-list {
     padding: 0;
     list-style: none;
     width: 100%;
@@ -302,20 +328,23 @@ ul#fav-list, ul#num-list {
 
 ul#fav-list li {
     display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
-.fav-item {
+.fav-item a {
     color: #000000;
-    display: block;
-    width: inherit;
     margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+.fav-item a span {
+    position: absolute;
+    right: 0;
 }
 
-.fav-item:hover {
+.fav-item a:hover {
     color: #ff2d2d;
     text-decoration: none;
 }
@@ -324,9 +353,11 @@ ul#fav-list li {
     display: flex;
     justify-content: space-between;
 }
+
 #about a {
     color: #4db2ec;
 }
+
 #about a:hover {
     text-decoration: none;
 }
@@ -338,6 +369,7 @@ ul#fav-list li {
 #social-media {
     margin-top: 45px;
 }
+
 #social-media i {
     color: #eeeeee;
     background-color: #434648;
