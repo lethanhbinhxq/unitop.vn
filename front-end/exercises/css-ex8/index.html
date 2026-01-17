@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị danh sách sản phẩm</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #wrapper {
+            max-width: 960px;
+            margin: 0px auto;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+        }
+        ul.list-product {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+        ul.list-product li {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 30px;
+        }
+        ul.list-product li .product-item {
+            border: 1px solid #f3f3f3;
+            flex-basis: 33.33%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+        ul.list-product li .product-item:hover {
+            border: 1px solid orange;
+        }
+        .product-item:hover img {
+            transform: rotate(1deg);
+            transition: all 0.1s;
+        }
+        .product-item:hover .buy-now {
+            bottom: 0px;
+        }
+        .text-uppercase {
+            text-transform: uppercase;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .discount {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        .price {
+            color: orange;
+            font-weight: bold;
+            margin: 15px;
+        }
+        .buy-now {
+            color: white;
+            background-color: orange;
+            padding: 15px;
+            position: absolute;
+            width: 100%;
+            bottom: -50px;
+            transition: all 0.1s;
+        }
+        .product-name {
+            color: gray;
+            margin-bottom: 5px;
+        }
+    </style>
+    <div id="wrapper">
+        <header>
+            <h1 class="text-uppercase text-center">Bài tập 8 - Áp dụng hiệu ứng Css</h1>
+        </header>
+        <ul class="list-product">
+            <li>
+                <div class="product-item">
+                    <a href="#"><img src="images/product5.jpg" alt=""></a>
+                    <span class="discount"><img src="images/sale.png" alt=""></span>
+                    <div class="price">499.000đ</div>
+                    <a href="#" class="product-name">Lorem ipsum dolor sit amet.</a>
+                    <a href="#" class="buy-now">Mua ngay</a>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="#"><img src="images/product9.jpg" alt=""></a>
+                    <div class="price">499.000đ</div>
+                    <a href="#" class="product-name">Lorem ipsum dolor sit amet.</a>
+                    <a href="#" class="buy-now">Mua ngay</a>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="#"><img src="images/product11.jpg" alt=""></a>
+                    <div class="price">499.000đ</div>
+                    <a href="#" class="product-name">Lorem ipsum dolor sit amet.</a>
+                    <a href="#" class="buy-now">Mua ngay</a>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="#"><img src="images/product11.jpg" alt=""></a>
+                    <div class="price">499.000đ</div>
+                    <a href="#" class="product-name">Lorem ipsum dolor sit amet.</a>
+                    <a href="#" class="buy-now">Mua ngay</a>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="#"><img src="images/product5.jpg" alt=""></a>
+                    <span class="discount"><img src="images/sale.png" alt=""></span>
+                    <div class="price">499.000đ</div>
+                    <a href="#" class="product-name">Lorem ipsum dolor sit amet.</a>
+                    <a href="#" class="buy-now">Mua ngay</a>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="#"><img src="images/product1.jpg" alt=""></a>
+                    <div class="price">499.000đ</div>
+                    <a href="#" class="product-name">Lorem ipsum dolor sit amet.</a>
+                    <a href="#" class="buy-now">Mua ngay</a>
+                </div>
+            </li>
+        </ul>
+
+        <footer>
+            <p class="text-center">Unitop - Học lập trình web đi làm</p>
+        </footer>
+    </div>
+</body>
+
+</html>

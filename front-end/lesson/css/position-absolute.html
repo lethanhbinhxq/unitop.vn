@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute</title>
+</head>
+<body>
+    <style>
+        .box-parent {
+            width: 350px;
+            height: 350px;
+            background-color: wheat;
+            position: relative;
+        }
+        .box-child {
+            background-color: tomato;
+            position: absolute;
+            padding: 20px;
+            color: white;
+            top: 50px;
+            left: 20px;
+        }
+    </style>
+    <h1>Position Relative</h1>
+    <div class="box-parent">
+        <div class="box-child">Box 2</div>
+    </div>
+</body>
+</html>
