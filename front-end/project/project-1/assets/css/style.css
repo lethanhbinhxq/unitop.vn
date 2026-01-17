@@ -112,10 +112,16 @@ nav.navbar ul li a.nav-item.active {
 
 /* ----------- Feature Posts ----------- */
 
-.box-body {
+ul#feature-list {
     padding: 0;
     list-style: none;
     margin-top: 20px;
+}
+
+#feature .box-body {
+    border-bottom: 1px solid #dadada;
+    padding-top: 30px;
+    margin-bottom: 20px;
 }
 
 .feature-item {
@@ -146,11 +152,6 @@ img:hover {
     transform: scale(1.05);
     transition: all 0.25s;
 
-}
-
-#feature.box-body {
-    border-bottom: 1px solid #dadada;
-    padding-bottom: 20px;
 }
 
 /* ----------- New Posts ----------- */
