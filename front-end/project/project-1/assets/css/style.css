@@ -1,3 +1,8 @@
+#wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 /* ============== HEADER ============== */
 
 header {
@@ -6,13 +11,9 @@ header {
 }
 
 /* ----------- Logo & Search ----------- */
-
-#wp-header {
-    margin-bottom: 10px;
-}
-
-#header {
-    margin-top: 28px;
+header {
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
 
 /* Search */
@@ -58,102 +59,62 @@ input#search-input:focus {
 
 .navbar ul {
     padding: 0px;
+    margin: 0px;
     list-style: none;
 }
 
-.nav-item {
+nav.navbar ul li a.nav-item {
     color: #eeeeee;
+    display: block;
     padding: 6px 20px;
-    margin-left: 3px;
-    margin-right: 3px;
     font-size: 16px;
     font-weight: 600;
 }
 
-.navbar ul li:first-child a {
+nav.navbar ul li:first-child a {
     padding-left: 0px;
     margin-left: 0px;
 }
 
-.nav-item:hover {
+nav.navbar ul li:hover a.nav-item {
     color: #4db2ec;
     text-decoration: none;
 }
 
-#nav-decor {
-    background-color: #ff2d2d;
-    width: 10px;
-    height: 35px;
+nav.navbar ul li a.nav-item.active {
+    color: #4db2ec;
 }
 
-#top-footer {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 0;
+#header .navbar {
+    margin-top: 9px;
+    border-right: 10px solid #ff2d2d;
 }
+
+/* ============== CONTENT ============== */
 
 #wp-content {
     background: white;
 }
 
-#about {
-    flex: 30%;
-    margin-right: 60px;
-}
-
-#about h3,
-#follow h3 {
-    color: #f6f6f6;
-    text-transform: uppercase;
-    font-weight: normal;
-}
-
-#about p {
-    color: #f6f6f6;
-}
-
-#follow {
-    flex: 20%;
-    margin-left: 40px;
-}
-
-#footer-logo {
-    flex: 20%;
-}
-
-footer {
-    background: #2e2f30;
-}
-
-#feature {
-    margin-top: 32px;
-}
-
-#feature-title h3 {
+/* ----------- Box Head Title ----------- */
+.box-head h3 {
     text-transform: uppercase;
     color: #eeeeee;
     font-size: 16px;
     text-align: center;
     font-weight: 600px;
-
-}
-
-#feature-title {
-    /* height: 30px; */
-    padding-top: 5px;
-    padding-bottom: 1px;
-    width: 96px;
     background-color: #23282d;
-    margin-bottom: 20px;
+    display: inline-block;
+    margin-top: 32px;
+    padding: 10px 12px;
 }
 
-#feature ul {
+/* ----------- Feature ----------- */
+
+#feature ul#feature-list {
     padding: 0;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .feature-item {
@@ -173,7 +134,12 @@ footer {
 }
 
 .feature-img {
+    display: block;
     margin-bottom: 20px;
+}
+
+.feature-img:hover {
+    overflow: hidden;
 }
 
 img:hover {
@@ -186,62 +152,26 @@ img:hover {
     border: 1px solid #dadada;
 }
 
-#content-title h3 {
-    text-transform: uppercase;
-    color: #eeeeee;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 600px;
-
-}
-
-#content-title {
-    /* height: 28px; */
-    padding-top: 5px;
-    padding-bottom: 1px;
-    width: 128px;
-    background-color: #4db2ec;
-    margin-top: 20px;
-}
-
-.fav-num {
-    text-align: right;
-}
-
-#content hr {
-    border: 1px solid #4db2ec;
-    margin-top: 0;
-    margin-bottom: 30px;
-}
-
-#wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-#wp-content {
-    flex: 100%;
-}
-
-#wp-content-sidebar {
-    display: flex;
-    justify-content: space-between;
-}
-
+/* ----------- New Post ----------- */
 #content {
     flex: 66%;
     margin-right: 30px;
 }
 
-#sidebar {
-    flex: 33%;
-    margin-left: 30px;
+#content .box-head h3 {
+    background: #4db2ec;
+    margin-bottom: 0;
+}
+
+#content .box-head {
+    margin-top: 0;
+    border-bottom: 2px solid #4db2ec;
 }
 
 ul#post-list {
     padding: 0;
     list-style: none;
+    margin-top: 30px;
 }
 
 .post-item {
@@ -253,6 +183,8 @@ ul#post-list {
 
 .post-img {
     flex: 30%;
+    overflow: hidden;
+    margin-right: 30px;
 }
 
 .post-img img {
@@ -291,39 +223,31 @@ ul#post-list {
     color: #777777;
 }
 
-#fav-title h3 {
-    text-transform: uppercase;
-    color: #eeeeee;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 600px;
-
-}
-
-#fav-title {
-    /* height: 28px; */
-    padding-top: 5px;
-    padding-bottom: 1px;
-    width: 177px;
-    background-color: #ff2d2d;
-    margin-top: 20px;
-}
-
-#fav hr {
-    border: 1px solid #ff2d2d;
-    margin-top: 0;
-    margin-bottom: 30px;
+/* ----------- Sidebar ----------- */
+#sidebar {
+    flex: 33%;
+    margin-left: 30px;
 }
 
 #sidebar img {
     margin-top: 20px;
 }
 
-ul#fav-list,
-ul#num-list {
+#fav .box-head h3 {
+    background: #ff2d2d;
+    margin-bottom: 0;
+}
+
+#fav .box-head {
+    margin-top: 0;
+    border-bottom: 2px solid #ff2d2d;
+}
+
+ul#fav-list{
     padding: 0;
     list-style: none;
     width: 100%;
+    margin-top: 40px;
 }
 
 ul#fav-list li {
@@ -332,13 +256,13 @@ ul#fav-list li {
     align-items: center;
 }
 
-
 .fav-item a {
     color: #000000;
     margin-bottom: 20px;
     position: relative;
     width: 100%;
 }
+
 .fav-item a span {
     position: absolute;
     right: 0;
@@ -354,6 +278,38 @@ ul#fav-list li {
     justify-content: space-between;
 }
 
+/* ============== FOOTER ============== */
+footer {
+    background: #2e2f30;
+}
+/* ----------- Top footer ----------- */
+#top-footer {
+    width: 100%;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#footer-logo {
+    flex: 20%;
+}
+
+#about {
+    flex: 30%;
+    margin-right: 60px;
+}
+
+#about h3,
+#follow h3 {
+    color: #f6f6f6;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#about p {
+    color: #f6f6f6;
+    font-size: 14px;
+}
+
 #about a {
     color: #4db2ec;
 }
@@ -362,8 +318,9 @@ ul#fav-list li {
     text-decoration: none;
 }
 
-#about p {
-    font-size: 14px;
+#follow {
+    flex: 20%;
+    margin-left: 40px;
 }
 
 #social-media {
@@ -382,10 +339,7 @@ ul#fav-list li {
     color: #4db2ec;
 }
 
-#bottom-footer-content {
-    display: flex;
-    justify-content: space-between;
-}
+/* ----------- Bottom footer ----------- */
 
 #bottom-footer {
     background-color: #222527;
@@ -393,6 +347,17 @@ ul#fav-list li {
     padding-top: 16px;
 }
 
+#bottom-footer .navbar a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#bottom-footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
 #copyright {
     color: #ffffff;
+    font-size: 14px;
 }

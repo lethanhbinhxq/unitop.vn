@@ -21,12 +21,15 @@
 </head>
 
 <body>
-    <div id="wrapper">
+    <div id="wrapper" class="flex">
+        <!-- Header -->
         <header>
             <div id="header" class="container">
                 <div id="wp-header" class="flex justify-content-between">
+                    <!-- Logo -->
                     <a href="index.html"><img src="assets/images/logo.png" alt="Unitop Newspaper Logo"></a>
 
+                    <!-- Search -->
                     <form action="" id="search">
                         <input type="text" id="search-input" placeholder="Bạn muốn tìm gì?">
                         <button>
@@ -35,10 +38,11 @@
                     </form>
                 </div>
 
+                <!-- Menu -->
                 <nav class="navbar">
                     <ul class="flex">
                         <li><a href="#" class="nav-item">Trang chủ</a></li>
-                        <li><a href="#" class="nav-item">Thời trang</a></li>
+                        <li><a href="#" class="nav-item active">Thời trang</a></li>
                         <li><a href="#" class="nav-item">Đời sống</a></li>
                         <li><a href="#" class="nav-item">Xã hội</a></li>
                         <li><a href="#" class="nav-item">Bóng đá</a></li>
@@ -50,34 +54,35 @@
             </div>
         </header>
         <div id="wp-content" class="container">
+            <!-- Feature posts -->
             <div id="feature">
-                <div id="feature-title">
+                <div class="box-head">
                     <h3>Nổi bật</h3>
                 </div>
-                <ul class="feature-list">
+                <ul id="feature-list" class="flex justify-content-between">
                     <li class="feature-item">
-                        <a href="#"><img src="assets/images/post-1.png" alt="" class="feature-img"></a>
+                        <a href="#" class="feature-img"><img src="assets/images/post-1.png" alt=""></a>
                         <a href="#" class="feature-text">Xu hướng thời trang hè 2020: Những mảnh ghép đáng được chú
                             ý</a>
                     </li>
                     <li class="feature-item">
-                        <a href="#"><img src="assets/images/post-2.png" alt="" class="feature-img"></a>
+                        <a href="#" class="feature-img"><img src="assets/images/post-2.png" alt="" ></a>
                         <a href="#" class="feature-text">Buổi trình diễn thời trang mùa xuân tại Đại học Michigan đã bắt
                             đầu</a>
                     </li>
                     <li class="feature-item">
-                        <a href="#"><img src="assets/images/post-3.png" alt="" class="feature-img"></a>
+                        <a href="#" class="feature-img"><img src="assets/images/post-3.png" alt=""></a>
                         <a href="#" class="feature-text">Bật mí cách mặc đẹp cho người mập trở nên thon gọn</a>
                     </li>
                 </ul>
             </div>
             <hr>
-            <div id="wp-content-sidebar">
+            <div id="wp-content-sidebar" class="flex justify-content-between">
+                <!-- New posts -->
                 <div id="content">
-                    <div id="content-title">
+                    <div class="box-head">
                         <h3>Bài viết mới</h3>
                     </div>
-                    <hr>
                     <ul id="post-list">
                         <li class="post-item">
                             <a href="#" class="post-img"><img src="assets/images/thumb-1.png" alt=""></a>
@@ -174,14 +179,18 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Sidebar -->
                 <div id="sidebar">
-                    <img src="assets/images/ads.png" alt="">
+                    <!-- Sidebar image -->
+                    <a href="#" class="feature-img">
+                        <img src="assets/images/ads.png" alt="">
+                    </a>
 
+                    <!-- Favorite topic -->
                     <div id="fav">
-                        <div id="fav-title">
+                        <div class="box-head">
                             <h3>Chủ đề quan tâm</h3>
                         </div>
-                        <hr>
                         <div id="fav-content">
                             <ul id="fav-list">
                                 <li class="fav-item">
@@ -230,12 +239,15 @@
                 </div>
             </div>
         </div>
+        <!-- Footer -->
         <footer>
             <div id="footer">
-                <div id="top-footer" class="container">
+                <div id="top-footer" class="container flex justify-content-between">
+                    <!-- Logo -->
                     <a href="index.html" id="footer-logo"><img src="assets/images/logo.png"
                             alt="Unitop Newspaper Logo"></a>
 
+                    <!-- About -->
                     <div id="about">
                         <h3>Về chúng tôi</h3>
                         <p>Unitop.vn là hệ thống đào tạo lập trình web online theo lộ trình từng bước. Hệ thống phát
@@ -244,6 +256,7 @@
                         </p>
                     </div>
 
+                    <!-- Social Media -->
                     <div id="follow">
                         <h3>Theo dõi</h3>
                         <div id="social-media">
@@ -257,11 +270,13 @@
 
                 <div id="bottom-footer">
                     <div id="bottom-footer-content" class="container">
+                        <!-- Copy right -->
                         <div id="copyright">
                             © Unitop.vn - Html Css 21 Ngày
                         </div>
+                        <!-- Footer menu -->
                         <nav class="navbar">
-                            <ul>
+                            <ul class="flex">
                                 <li><a href="#" class="nav-item">Bảo mật</a></li>
                                 <li><a href="#" class="nav-item">Quảng cáo</a></li>
                                 <li><a href="#" class="nav-item">Liên hệ</a></li>
