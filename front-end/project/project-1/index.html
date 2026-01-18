@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8">
@@ -12,9 +12,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
 
-  <link href="assets/fonts/css/fontawesome.css" rel="stylesheet" />
-  <link href="assets/fonts/css/brands.css" rel="stylesheet" />
-  <link href="assets/fonts/css/solid.css" rel="stylesheet" />
+  <link href="assets/fonts/css/fontawesome.css" rel="stylesheet">
+  <link href="assets/fonts/css/brands.css" rel="stylesheet">
+  <link href="assets/fonts/css/solid.css" rel="stylesheet">
   <title>Unitop - Newspaper</title>
 </head>
 
@@ -28,7 +28,7 @@
           <a href="index.html"><img src="assets/images/logo.png" alt="Unitop Newspaper Logo"></a>
 
           <!-- Search -->
-          <form action="" id="search">
+          <form id="search">
             <input type="text" id="search-input" placeholder="Bạn muốn tìm gì?">
             <button>
               <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
@@ -89,7 +89,7 @@
                 <a href="#" class="post-img"><img src="assets/images/thumb-1.png" alt=""></a>
                 <div class="post-info">
                   <a href="#" class="post-title">Bạn có phải là một người phụ nữ có phong cách?</a>
-                  <div>
+                  <div class="post-publish">
                     <span class="post-author">phancuong</span>
                     <span class="post-date">10/08/2020</span>
                   </div>
@@ -104,7 +104,7 @@
                 <a href="#" class="post-img"><img src="assets/images/thumb-2.png" alt=""></a>
                 <div class="post-info">
                   <a href="#" class="post-title">Cách để bạn luôn tỏa sáng trước đám đông</a>
-                  <div>
+                  <div class="post-publish">
                     <span class="post-author">phancuong</span>
                     <span class="post-date">12/08/2020</span>
                   </div>
@@ -119,7 +119,7 @@
                 <a href="#" class="post-img"><img src="assets/images/thumb-3.png" alt=""></a>
                 <div class="post-info">
                   <a href="#" class="post-title">Những kiểu tóc mới là xu hướng của giới trẻ 2020</a>
-                  <div>
+                  <div class="post-publish">
                     <span class="post-author">phancuong</span>
                     <span class="post-date">14/06/2020</span>
                   </div>
@@ -135,7 +135,7 @@
                 <div class="post-info">
                   <a href="#" class="post-title">15 địa điểm du lịch nổi tiếng bạn cần đến tại Việt
                     Nam</a>
-                  <div>
+                  <div class="post-publish">
                     <span class="post-author">phancuong</span>
                     <span class="post-date">02/04/2020</span>
                   </div>
@@ -151,7 +151,7 @@
                 <div class="post-info">
                   <a href="#" class="post-title">Hãy xách balo lên và đi và trải nghiệm những khoảnh khắc
                     thú vị</a>
-                  <div>
+                  <div class="post-publish">
                     <span class="post-author">phancuong</span>
                     <span class="post-date">16/03/2020</span>
                   </div>
@@ -167,7 +167,7 @@
                 <div class="post-info">
                   <a href="#" class="post-title">Top 10 nữ hoàng DJ nổi tiếng nhất Las Vegas bạn cần
                     biết</a>
-                  <div>
+                  <div class="post-publish">
                     <span class="post-author">phancuong</span>
                     <span class="post-date">10/02/2020</span>
                   </div>
@@ -184,7 +184,7 @@
         <!-- Sidebar -->
         <div id="sidebar">
           <!-- Sidebar image -->
-          <a href="#" class="feature-img">
+          <a href="#" id="ads-img">
             <img src="assets/images/ads.png" alt="">
           </a>
 
@@ -194,48 +194,50 @@
               <h3>Chủ đề quan tâm</h3>
             </div>
             <div id="fav-content">
-              <ul id="fav-list" class="box-body">
-                <li class="fav-item">
-                  <a href="#">
-                    Thời trang<span class="fav-num">20</span>
-                  </a>
-                </li>
-                <li class="fav-item">
-                  <a href="#">
-                    Đời sống<span class="fav-num">30</span>
-                  </a>
-                </li>
-                <li class="fav-item">
-                  <a href="#">
-                    Xã hội<span class="fav-num">26</span>
-                  </a>
-                </li>
-                <li class="fav-item">
-                  <a href="#">
-                    Bóng đá<span class="fav-num">35</span>
-                  </a>
-                </li>
-                <li class="fav-item">
-                  <a href="#">
-                    Điện ảnh<span class="fav-num">29</span>
-                  </a>
-                </li>
-                <li class="fav-item">
-                  <a href="#">
-                    Sự kiện<span class="fav-num">15</span>
-                  </a>
-                </li>
-                <li class="fav-item">
-                  <a href="#">
-                    Du lịch<span class="fav-num">34</span>
-                  </a>
-                </li>
-                <li class="fav-item">
-                  <a href="#">
-                    Hỗ trợ<span class="fav-num">45</span>
-                  </a>
-                </li>
-              </ul>
+              <div class="box-body">
+                <ul id="fav-list">
+                  <li class="fav-item">
+                    <a href="#">
+                      Thời trang<span class="fav-num">20</span>
+                    </a>
+                  </li>
+                  <li class="fav-item">
+                    <a href="#">
+                      Đời sống<span class="fav-num">30</span>
+                    </a>
+                  </li>
+                  <li class="fav-item">
+                    <a href="#">
+                      Xã hội<span class="fav-num">26</span>
+                    </a>
+                  </li>
+                  <li class="fav-item">
+                    <a href="#">
+                      Bóng đá<span class="fav-num">35</span>
+                    </a>
+                  </li>
+                  <li class="fav-item">
+                    <a href="#">
+                      Điện ảnh<span class="fav-num">29</span>
+                    </a>
+                  </li>
+                  <li class="fav-item">
+                    <a href="#">
+                      Sự kiện<span class="fav-num">15</span>
+                    </a>
+                  </li>
+                  <li class="fav-item">
+                    <a href="#">
+                      Du lịch<span class="fav-num">34</span>
+                    </a>
+                  </li>
+                  <li class="fav-item">
+                    <a href="#">
+                      Hỗ trợ<span class="fav-num">45</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -246,11 +248,20 @@
       <div id="footer">
         <div id="top-footer" class="container flex justify-content-between">
           <!-- Logo -->
-          <a href="index.html" id="footer-logo"><img src="assets/images/logo.png" alt="Unitop Newspaper Logo"></a>
+          <div id="wp-footer-logo">
+            <div class="box-head">
+              <h3>Unitop</h3>
+            </div>
+            <div class="box-body">
+              <a href="index.html" id="footer-logo"><img src="assets/images/logo.png" alt="Unitop Newspaper Logo"></a>
+            </div>
+          </div>
 
           <!-- About -->
           <div id="about">
-            <h3>Về chúng tôi</h3>
+            <div class="box-about box-head">
+              <h3>Về chúng tôi</h3>
+            </div>
             <p>Unitop.vn là hệ thống đào tạo lập trình web online theo lộ trình từng bước. Hệ thống phát
               triển từ tháng 6/2017 đến nay đã có gần 2.000 người theo học và đạt kết quả tốt. <br>
               <a href="http://unitop.vn">http://unitop.vn</a>
@@ -259,22 +270,26 @@
 
           <!-- Social Media -->
           <div id="follow">
-            <h3>Theo dõi</h3>
-            <div id="social-media">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              <a href="#"><i class="fa-brands fa-square-pinterest"></i></a>
+            <div class="box-follow box-head">
+              <h3>Theo dõi</h3>
+            </div>
+            <div class="box-body">
+              <ul id="social-media" class="flex justify-content-between">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-pinterest"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
 
         <div id="bottom-footer">
-          <div id="bottom-footer-content" class="container">
+          <div id="bottom-footer-content" class="container flex justify-content-between">
             <!-- Copy right -->
-            <div id="copyright">
+            <p id="copyright">
               © Unitop.vn - Html Css 21 Ngày
-            </div>
+            </p>
             <!-- Footer menu -->
             <nav class="navbar">
               <ul class="flex">
