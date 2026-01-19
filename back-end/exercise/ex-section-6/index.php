@@ -52,6 +52,7 @@ if ($a == 0) {
 else {
     $delta = pow($b, 2) - 4 * $a * $c;
     if ($delta < 0) {
-        
+        $x_r = -$b / (2 * $a);
+        $x_i = sqrt(-$delta) / (2 * $a);
     }
 }
