@@ -39,11 +39,22 @@ echo "Bài tập 4 <br>";
 echo "Giải phương trình bậc 2: {$a}x^2 + {$b}x + {$c} = 0 <br>";
 
 if ($a == 0) {
-    echo "Đây không phải là phương trình bậc 2!";
+    if ($b == 0 && $c == 0) {
+        echo "Phương trình vô số nghiệm";
+    } elseif ($b == 0 || $c == 0) {
+        echo "Phương trình vô nghiệm";
+    } else {
+        $x = -$c / $b;
+        echo "Phương trình có nghiệm x = {$x}";
+    }
 } else {
     $delta = pow($b, 2) - 4 * $a * $c;
     if ($delta < 0) {
-        echo "Phương trình vô nghiệm";
+        $x_r = -$b / (2 * $a);
+        $x_i = sqrt(-$delta) / (2 * $a);
+        echo "Phương trình có nghiệm phức:<br>";
+        echo "x1 = {$x_r} - {$x_i}i <br>";
+        echo "x2 = {$x_r} + {$x_i}i <br>";
     }
     elseif ($delta == 0) {
         $x = -$b / (2* $a);
