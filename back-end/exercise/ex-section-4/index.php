@@ -9,19 +9,19 @@ $member_list = array(
     1 => array(
         "id" => 1,
         "fullname" => "Lê Thanh Bình",
-        "birth_year" => "2003",
+        "birthday" => "2003",
     ),
 
     2 => array(
         "id" => 2,
         "fullname" => "Nguyễn Văn A",
-        "birth_year" => "2000",
+        "birthday" => "2000",
     ),
 
     3 => array(
         "id" => 3,
         "fullname" => "Nguyễn Văn B",
-        "birth_year" => "2006",
+        "birthday" => "2006",
     ),
 );
 
@@ -30,26 +30,26 @@ $member_list = array(
 $product_list = array(
     1 => array(
         "id" => 1,
-        "productName" => "Bút chì",
+        "product_name" => "Bút chì",
         "price" => "7000đ",
     ),
 
     2 => array(
         "id" => 2,
-        "productName" => "Bút bi",
+        "product_name" => "Bút bi",
         "price" => "10000đ",
     ),
 
     3 => array(
         "id" => 3,
-        "productName" => "Thước kẻ",
+        "product_name" => "Thước kẻ",
         "price" => "15000đ",
     ),
 );
 
 # Bài tập 3: Biến lưu thông tin cá nhân
 $name = "Bình";
-$birth_year = "2003";
+$birthday = "2003";
 $weight = "63kg";
 ?>
 
@@ -65,7 +65,7 @@ $weight = "63kg";
 <body>
     <h1>Bài tập phần 4</h1>
     <p>Tôi là <strong><?php echo $name?></strong>,
-        sinh năm <strong><?php echo $birth_year ?></strong>,
+        sinh năm <strong><?php echo $birthday ?></strong>,
         cân nặng <strong><?php echo $weight ?></strong>
     </p>
 </body>
