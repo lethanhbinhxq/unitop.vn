@@ -9,6 +9,11 @@ ul {
     list-style: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* ============== HEADER ============== */
 
 header {
@@ -64,25 +69,25 @@ input#search-input:focus {
 
 /* ----------- Nav bar ----------- */
 
-nav.navbar ul li a.nav-item {
+#header nav.navbar ul li a.nav-item {
     color: #eeeeee;
     display: block;
-    padding: 6px 20px;
+    padding: 6px 15px;
     font-size: 16px;
     font-weight: 600;
 }
 
-nav.navbar ul li:first-child a {
+#header nav.navbar ul li:first-child a {
     padding-left: 0px;
     margin-left: 0px;
 }
 
-nav.navbar ul li:hover a.nav-item {
+#header nav.navbar ul li:hover a.nav-item {
     color: #4db2ec;
     text-decoration: none;
 }
 
-nav.navbar ul li a.nav-item.active {
+#header nav.navbar ul li a.nav-item.active {
     color: #4db2ec;
 }
 
@@ -103,8 +108,8 @@ nav.navbar ul li a.nav-item.active {
     color: #eeeeee;
     font-size: 16px;
     text-align: center;
-    font-weight: 600px;
-    background-color: #23282d;
+    font-weight: 600;
+    background: #23282d;
     display: inline-block;
     padding: 3px 15px;
     margin-bottom: 0;
@@ -114,7 +119,7 @@ nav.navbar ul li a.nav-item.active {
 
 #feature .box-body {
     border-bottom: 1px solid #dadada;
-    padding-top: 15px;
+    padding-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -122,8 +127,13 @@ nav.navbar ul li a.nav-item.active {
     margin-top: 20px;
 }
 
+#feature-list {
+    margin-top: 0;
+}
+
 .feature-item {
     flex: 360px 0 1;
+    padding-bottom: 15px;
 }
 
 a.feature-text {
@@ -146,7 +156,7 @@ a.feature-img:hover {
     overflow: hidden;
 }
 
-img:hover {
+.feature-img img:hover, .post-img img:hover {
     transform: scale(1.05);
     transition: all 0.25s;
 
@@ -199,7 +209,7 @@ a.post-img {
 }
 
 .post-publish {
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 11px;
     padding: 6px 0;
 }
@@ -242,10 +252,6 @@ a.post-img {
 #fav .box-head {
     margin-top: 0;
     border-bottom: 2px solid #ff2d2d;
-}
-
-ul#fav-list{
-    width: 100%;
 }
 
 li.fav-item a {
@@ -315,6 +321,10 @@ footer {
     padding-right: 15px;
 }
 
+ul#social-media {
+    margin-top: 0px;
+    max-width: 165px;
+}
 ul#social-media li a {
     background: #434648;
     padding: 7px 7px;
@@ -331,16 +341,22 @@ ul#social-media li:hover a {
     width: 100%;
     color: #ffffff;
     font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-#bottom-footer .navbar a {
+#bottom-footer .navbar .nav-item {
     font-size: 14px;
     font-weight: 400;
-    padding-top: 12px;
+    color: #ffffff;
+    padding: 15px 15px;
+}
+
+#bottom-footer .navbar .nav-item:hover {
+    color: #4db2ec;
+    text-decoration: none;
 }
 
 #copyright {
     margin-bottom: 0;
-    padding-top: 12px;
-    padding-bottom: 12px;
 }
