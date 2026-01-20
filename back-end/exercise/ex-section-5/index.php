@@ -1,8 +1,10 @@
 <?php
 
-// Tạo biến số nguyên $a, nếu $a là số nguyên dương chẵn
-// => cộng thêm 1 đơn vị
-// xuất kết quả ra cho người dùng
+/*
+Tạo biến số nguyên $a, nếu $a là số nguyên dương chẵn
+=> cộng thêm 1 đơn vị
+xuất kết quả ra cho người dùng
+*/
 
 $a = 10;
 
