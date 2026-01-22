@@ -23,79 +23,79 @@ for ($i = 3; $i <= 150; $i += 2) {
 
 /*
  * Mỗi bài viết tin tức gồm:
- * 1. post_id: id bài viết
- * 2. post_title: tiêu đề
- * 3. post_thumb: hình ảnh bài viết, lưu trong folder assets/images
- * 4. post_author: tác giả bài viết
- * 5. post_date: Thời gian đăng bài
- * 6. post_description: Mô tả ngắn về bài viết
+ * 1. id: id bài viết
+ * 2. title: tiêu đề
+ * 3. thumbnail: hình ảnh bài viết, lưu trong folder assets/images
+ * 4. author: tác giả bài viết
+ * 5. date: Thời gian đăng bài
+ * 6. description: Mô tả ngắn về bài viết
  * 8. cat_id: ID danh mục bài viết
  * 
  * Lưu category tại $list_category:
- * 1. cat_id: ID danh mục bài viết
- * 2. cat_title: Tên danh mục
+ * 1. id: ID danh mục bài viết
+ * 2. title: Tên danh mục
  */
 
 $list_category = array(
     1 => array(
-        "cat_id" => 1,
-        "cat_title" => "Kinh doanh"
+        "id" => 1,
+        "title" => "Kinh doanh"
     ),
     2 => array(
-        "cat_id" => 1,
-        "cat_title" => "Thể thao"
+        "id" => 1,
+        "title" => "Thể thao"
     ),
     3 => array(
-        "cat_id" => 1,
-        "cat_title" => "Thời sự"
+        "id" => 1,
+        "title" => "Thời sự"
     ),
     4 => array(
-        "cat_id" => 1,
-        "cat_title" => "Giải trí"
+        "id" => 1,
+        "title" => "Giải trí"
     ),
 );
 $list_posts = array(
     // Post 1
     1 => array(
-        "post_id" => 1,
-        'post_title' => "Việt Nam hấp dẫn hơn với đầu tư dài hạn",
-        "post_thumb" => "assets/images/post_1.jpg",
-        "post_author" => "Nhóm Tác Giả",
-        "post_date" => "20/01/2026 15:04",
-        "post_description" => "Đây là chia sẻ của Đại sứ EU tại Việt Nam Julien Guerrier khi nhìn lại quan hệ giữa hai bên trong 5 năm qua.",
+        "id" => 1,
+        'title' => "Việt Nam hấp dẫn hơn với đầu tư dài hạn",
+        "thumbnail" => "assets/images/post_1.jpg",
+        "author" => "Nhóm Tác Giả",
+        "date" => "20/01/2026 15:04",
+        "description" => "Đây là chia sẻ của Đại sứ EU tại Việt Nam Julien Guerrier khi nhìn lại quan hệ giữa hai bên trong 5 năm qua.",
         "cat_id" => 1,
     ),
 
     // Post 2
     2 => array(
-        "post_id" => 2,
-        'post_title' => "Tỉ phú bóng đá Anh sẽ thưởng 305 tỉ đồng cho U23 Trung Quốc nếu thắng U23 Việt Nam",
-        "post_thumb" => "assets/images/post_2.jpg",
-        "post_author" => "Huy Đăng",
-        "post_date" => "20/01/2026 06:46",
-        "post_description" => "Theo thông tin từ truyền thông Trung Quốc, đội bóng đá U23 của họ sẽ nhận khoản thưởng cực lớn, lên đến 81 triệu nhân dân tệ nếu giành vé vào chung kết Giải U23.",
+        "id" => 2,
+        'title' => "Tỉ phú bóng đá Anh sẽ thưởng 305 tỉ đồng cho U23 Trung Quốc nếu thắng U23 Việt Nam",
+        "thumbnail" => "assets/images/post_2.jpg",
+        "author" => "Huy Đăng",
+        "date" => "20/01/2026 06:46",
+        "description" => "Theo thông tin từ truyền thông Trung Quốc, đội bóng đá U23 của họ sẽ nhận khoản thưởng cực lớn, lên đến 81 triệu nhân dân tệ nếu giành vé vào chung kết Giải U23.",
         "cat_id" => 2,
     ),
 
     // Post 3
     3 => array(
-        "post_id" => 3,
-        'post_title' => "Ông Kim Jong Un cách chức Phó thủ tướng ngay tại nhà máy vì thiếu trách nhiệm",
-        "post_thumb" => "assets/images/post_3.jpg",
-        "post_author" => "Hà Đào",
-        "post_date" => "20/01/2026 07:05",
-        "post_description" => "Nhà lãnh đạo Triều Tiên Kim Jong Un đã cách chức một quan chức cấp cao phụ trách chính sách kinh tế và công khai chỉ trích đội ngũ cán bộ điều hành mà ông cho là 'kém năng lực', trong chuyến thị sát dự án hiện đại hóa tổ hợp cơ khí trọng điểm.",
+        "id" => 3,
+        'title' => "Ông Kim Jong Un cách chức Phó thủ tướng ngay tại nhà máy vì thiếu trách nhiệm",
+        "thumbnail" => "assets/images/post_3.jpg",
+        "author" => "Hà Đào",
+        "date" => "20/01/2026 07:05",
+        "description" => "Nhà lãnh đạo Triều Tiên Kim Jong Un đã cách chức một quan chức cấp cao phụ trách chính sách kinh tế và công khai chỉ trích đội ngũ cán bộ điều hành mà ông cho là 'kém năng lực', trong chuyến thị sát dự án hiện đại hóa tổ hợp cơ khí trọng điểm.",
         "cat_id" => 3,
     ),
 
     // Post 4
     4 => array(
-        "post_id" => 4,
-        'post_title' => "Cú sốc từ 6 trang tâm thư của Brooklyn: Gia đình từng bắt tôi từ bỏ họ Beckham để đổi lấy tiền",
-        "post_thumb" => "assets/images/post_4.jpg",
-        "post_author" => "Thiên Phương",
-        "post_date" => "20/01/2026 07:56",
-        "post_description" => "Ở tuổi 26, Brooklyn Beckham vừa gây chấn động dư luận thế giới bằng những tuyên bố đanh thép, bóc trần mặt tối sau ánh hào quang của gia đình nổi tiếng nhất hành tinh.",
+        "id" => 4,
+        'title' => "Cú sốc từ 6 trang tâm thư của Brooklyn: Gia đình từng bắt tôi từ bỏ họ Beckham để đổi lấy tiền",
+        "thumbnail" => "assets/images/post_4.jpg",
+        "author" => "Thiên Phương",
+        "date" => "20/01/2026 07:56",
+        "description" => "Ở tuổi 26, Brooklyn Beckham vừa gây chấn động dư luận thế giới bằng những tuyên bố đanh thép, bóc trần mặt tối sau ánh hào quang của gia đình nổi tiếng nhất hành tinh.",
         "cat_id" => 4,
     ),
 );
@@ -103,52 +103,52 @@ $list_posts = array(
 # Bài 3: Tạo mảng đa chiều quản lý các sản phẩm trong website bán hàng
 /*
  * Mỗi sản phẩm gồm:
- * 1. product_id: id sản phẩm
- * 2. product_name: tên sản phẩm
- * 3. product_img: hình ảnh sản phẩm, lưu trong folder assets/images
+ * 1. id: id sản phẩm
+ * 2. name: tên sản phẩm
+ * 3. image: hình ảnh sản phẩm, lưu trong folder assets/images
  * 4. price: giá sản phẩm
  */
 $list_products = array(
     // Product 1
     1 => array(
-        "product_id" => 1,
-        'product_name' => "Balo đi học unisex thời trang nhiều ngăn tặng túi rút chống nước B42",
-        "product_img" => "assets/images/product_1.jpg",
+        "id" => 1,
+        'name' => "Balo đi học unisex thời trang nhiều ngăn tặng túi rút chống nước B42",
+        "image" => "assets/images/product_1.jpg",
         "price" => "255.000đ",
     ),
     // Product 2
     2 => array(
-        "product_id" => 2,
-        'product_name' => "Ống Hút Thép Không Gỉ 304 Thân Thiện Với Môi Trường",
-        "product_img" => "assets/images/product_2.jpg",
+        "id" => 2,
+        'name' => "Ống Hút Thép Không Gỉ 304 Thân Thiện Với Môi Trường",
+        "image" => "assets/images/product_2.jpg",
         "price" => "24.000đ",
     ),
     // Product 3
     3 => array(
-        "product_id" => 3,
-        'product_name' => "Set sticker chống nước đồ vật màu hồng ngọt ngào dễ thương",
-        "product_img" => "assets/images/product_3.jpg",
+        "id" => 3,
+        'name' => "Set sticker chống nước đồ vật màu hồng ngọt ngào dễ thương",
+        "image" => "assets/images/product_3.jpg",
         "price" => "16.000đ",
     ),
     // Product 4
     4 => array(
-        "product_id" => 4,
-        'product_name' => "Cân Tiểu Ly Điện Tử Nhà Bếp Mini Định Lượng 1g-10kg",
-        "product_img" => "assets/images/product_4.jpg",
+        "id" => 4,
+        'name' => "Cân Tiểu Ly Điện Tử Nhà Bếp Mini Định Lượng 1g-10kg",
+        "image" => "assets/images/product_4.jpg",
         "price" => "130.000đ",
     ),
     // Product 5
     5 => array(
-        "product_id" => 5,
-        'product_name' => "Bình giữ nhiệt Owala 710ml 900ml 24oz 32oz hàng cao cấp",
-        "product_img" => "assets/images/product_5.jpg",
+        "id" => 5,
+        'name' => "Bình giữ nhiệt Owala 710ml 900ml 24oz 32oz hàng cao cấp",
+        "image" => "assets/images/product_5.jpg",
         "price" => "500.000đ",
     ),
     // Product 6
     6 => array(
-        "product_id" => 6,
-        'product_name' => "Túi đựng hộp cơm trưa thời trang",
-        "product_img" => "assets/images/product_6.jpg",
+        "id" => 6,
+        'name' => "Túi đựng hộp cơm trưa thời trang",
+        "image" => "assets/images/product_6.jpg",
         "price" => "90.000đ",
     ),
 );
@@ -310,17 +310,17 @@ $list_products = array(
                 <?php foreach ($list_posts as $post) {
                     ?>
                     <li class="post-item">
-                        <a href="#" class="post-img"><img src=<?php echo $post['post_thumb'] ?> alt=""></a>
+                        <a href="#" class="post-img"><img src=<?php echo $post['thumbnail'] ?> alt=""></a>
                         <div class="post-info">
-                            <a href="#" class="post-title"><?php echo $post['post_title'] ?></a>
+                            <a href="#" class="post-title"><?php echo $post['title'] ?></a>
                             <div class="post-category">
-                                <?php echo $list_category[$post['cat_id']]['cat_title'] ?>
+                                <?php echo $list_category[$post['cat_id']]['title'] ?>
                             </div>
                             <div class="post-publish">
-                                <span class="post-author"><?php echo $post['post_author'] ?></span>
-                                <span class="post-date"><?php echo $post['post_date'] ?></span>
+                                <span class="post-author"><?php echo $post['author'] ?></span>
+                                <span class="post-date"><?php echo $post['date'] ?></span>
                             </div>
-                            <p class="post-desc"><?php echo $post['post_description'] ?></p>
+                            <p class="post-desc"><?php echo $post['description'] ?></p>
                         </div>
                     </li>
                 <?php }
@@ -340,9 +340,9 @@ $list_products = array(
             <?php foreach ($list_products as $product) {
                     ?>
             <li class="product-item">
-                <a href="#"><img src=<?php echo $product['product_img'] ?> alt=""></a>
+                <a href="#"><img src=<?php echo $product['image'] ?> alt=""></a>
                 <div class="price"><?php echo $product['price'] ?></div>
-                <a href="#" class="product-name"><?php echo $product['product_name'] ?></a>
+                <a href="#" class="product-name"><?php echo $product['name'] ?></a>
                 <a href="#" class="buy-now">Mua ngay</a>
             </li>
             <?php }

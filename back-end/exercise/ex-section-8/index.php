@@ -36,9 +36,8 @@
 
 function check_even($n)
 {
-    if ($n % 2 == 0) {
+    if ($n % 2 == 0)
         return true;
-    }
     return false;
 }
 
@@ -76,10 +75,9 @@ function check_prime($n)
 {
     if ($n < 2)
         return false;
-    for ($i = 2; $i * $i <= $n; $i++) {
-        if ($n % $i == 0) {
+    for ($i = 2; $i <= sqrt($n); $i++) {
+        if ($n % $i == 0)
             return false;
-        }
     }
     return true;
 }
@@ -103,86 +101,86 @@ echo "<br>----------<br>";
 /*
  * Hàm lấy thông tin chi tiết một bài viết theo id trong mảng bài viết
  * 1. Khai bào mảng bài viết
- * 2. viết hàm get_post_by_id(), tham số $post_id là số nguyên
+ * 2. viết hàm get_post_by_id(), tham số $id là số nguyên
  * 3. hàm trả về thông tin bài viết:
- * * post_title: Tiêu đề
- * * post_thumb: đường dẫn tới ảnh bài viết
- * * post_author: tác giả bài viết
- * * post_date: ngày đăng bài viết
- * * post_description: mô tả ngắn về bài viết
- * * cat_title: danh mục bài viết
+ * * title: Tiêu đề
+ * * thumbnail: đường dẫn tới ảnh bài viết
+ * * author: tác giả bài viết
+ * * date: ngày đăng bài viết
+ * * description: mô tả ngắn về bài viết
+ * * title: danh mục bài viết
  */
 
 
 $list_category = array(
     1 => array(
-        "cat_id" => 1,
-        "cat_title" => "Kinh doanh"
+        "id" => 1,
+        "title" => "Kinh doanh"
     ),
     2 => array(
-        "cat_id" => 1,
-        "cat_title" => "Thể thao"
+        "id" => 1,
+        "title" => "Thể thao"
     ),
     3 => array(
-        "cat_id" => 1,
-        "cat_title" => "Thời sự"
+        "id" => 1,
+        "title" => "Thời sự"
     ),
     4 => array(
-        "cat_id" => 1,
-        "cat_title" => "Giải trí"
+        "id" => 1,
+        "title" => "Giải trí"
     ),
 );
 $list_posts = array(
     // Post 1
     1 => array(
-        "post_id" => 1,
-        'post_title' => "Việt Nam hấp dẫn hơn với đầu tư dài hạn",
-        "post_thumb" => "assets/images/post_1.jpg",
-        "post_author" => "Nhóm Tác Giả",
-        "post_date" => "20/01/2026 15:04",
-        "post_description" => "Đây là chia sẻ của Đại sứ EU tại Việt Nam Julien Guerrier khi nhìn lại quan hệ giữa hai bên trong 5 năm qua.",
+        "id" => 1,
+        'title' => "Việt Nam hấp dẫn hơn với đầu tư dài hạn",
+        "thumbnail" => "assets/images/post_1.jpg",
+        "author" => "Nhóm Tác Giả",
+        "date" => "20/01/2026 15:04",
+        "description" => "Đây là chia sẻ của Đại sứ EU tại Việt Nam Julien Guerrier khi nhìn lại quan hệ giữa hai bên trong 5 năm qua.",
         "cat_id" => 1,
     ),
 
     // Post 2
     2 => array(
-        "post_id" => 2,
-        'post_title' => "Tỉ phú bóng đá Anh sẽ thưởng 305 tỉ đồng cho U23 Trung Quốc nếu thắng U23 Việt Nam",
-        "post_thumb" => "assets/images/post_2.jpg",
-        "post_author" => "Huy Đăng",
-        "post_date" => "20/01/2026 06:46",
-        "post_description" => "Theo thông tin từ truyền thông Trung Quốc, đội bóng đá U23 của họ sẽ nhận khoản thưởng cực lớn, lên đến 81 triệu nhân dân tệ nếu giành vé vào chung kết Giải U23.",
+        "id" => 2,
+        'title' => "Tỉ phú bóng đá Anh sẽ thưởng 305 tỉ đồng cho U23 Trung Quốc nếu thắng U23 Việt Nam",
+        "thumbnail" => "assets/images/post_2.jpg",
+        "author" => "Huy Đăng",
+        "date" => "20/01/2026 06:46",
+        "description" => "Theo thông tin từ truyền thông Trung Quốc, đội bóng đá U23 của họ sẽ nhận khoản thưởng cực lớn, lên đến 81 triệu nhân dân tệ nếu giành vé vào chung kết Giải U23.",
         "cat_id" => 2,
     ),
 
     // Post 3
     3 => array(
-        "post_id" => 3,
-        'post_title' => "Ông Kim Jong Un cách chức Phó thủ tướng ngay tại nhà máy vì thiếu trách nhiệm",
-        "post_thumb" => "assets/images/post_3.jpg",
-        "post_author" => "Hà Đào",
-        "post_date" => "20/01/2026 07:05",
-        "post_description" => "Nhà lãnh đạo Triều Tiên Kim Jong Un đã cách chức một quan chức cấp cao phụ trách chính sách kinh tế và công khai chỉ trích đội ngũ cán bộ điều hành mà ông cho là 'kém năng lực', trong chuyến thị sát dự án hiện đại hóa tổ hợp cơ khí trọng điểm.",
+        "id" => 3,
+        'title' => "Ông Kim Jong Un cách chức Phó thủ tướng ngay tại nhà máy vì thiếu trách nhiệm",
+        "thumbnail" => "assets/images/post_3.jpg",
+        "author" => "Hà Đào",
+        "date" => "20/01/2026 07:05",
+        "description" => "Nhà lãnh đạo Triều Tiên Kim Jong Un đã cách chức một quan chức cấp cao phụ trách chính sách kinh tế và công khai chỉ trích đội ngũ cán bộ điều hành mà ông cho là 'kém năng lực', trong chuyến thị sát dự án hiện đại hóa tổ hợp cơ khí trọng điểm.",
         "cat_id" => 3,
     ),
 
     // Post 4
     4 => array(
-        "post_id" => 4,
-        'post_title' => "Cú sốc từ 6 trang tâm thư của Brooklyn: Gia đình từng bắt tôi từ bỏ họ Beckham để đổi lấy tiền",
-        "post_thumb" => "assets/images/post_4.jpg",
-        "post_author" => "Thiên Phương",
-        "post_date" => "20/01/2026 07:56",
-        "post_description" => "Ở tuổi 26, Brooklyn Beckham vừa gây chấn động dư luận thế giới bằng những tuyên bố đanh thép, bóc trần mặt tối sau ánh hào quang của gia đình nổi tiếng nhất hành tinh.",
+        "id" => 4,
+        'title' => "Cú sốc từ 6 trang tâm thư của Brooklyn: Gia đình từng bắt tôi từ bỏ họ Beckham để đổi lấy tiền",
+        "thumbnail" => "assets/images/post_4.jpg",
+        "author" => "Thiên Phương",
+        "date" => "20/01/2026 07:56",
+        "description" => "Ở tuổi 26, Brooklyn Beckham vừa gây chấn động dư luận thế giới bằng những tuyên bố đanh thép, bóc trần mặt tối sau ánh hào quang của gia đình nổi tiếng nhất hành tinh.",
         "cat_id" => 4,
     ),
 );
 
-function get_post_by_id($post_id)
+function get_post_by_id($id)
 {
     global $list_category, $list_posts;
-    if (!empty($list_posts) && array_key_exists($post_id, $list_posts)) {
-        return $list_posts[$post_id];
+    if (!empty($list_posts) && array_key_exists($id, $list_posts)) {
+        return $list_posts[$id];
     } else {
         return false;
     }
@@ -190,12 +188,12 @@ function get_post_by_id($post_id)
 
 $post = get_post_by_id(2);
 if ($post) {
-    echo "Tiêu đề bài viết: {$post['post_title']} <br>";
-    echo "Đường dẫn tới ảnh bài viết: {$post['post_thumb']} <br>";
-    echo "Tác giả bài viết: {$post['post_author']} <br>";
-    echo "Ngày đăng bài viết: {$post['post_date']} <br>";
-    echo "Mô tả ngắn về bài viết: {$post['post_description']} <br>";
-    echo "Danh mục bài viết: {$list_category[$post['cat_id']]['cat_title']} <br>";
+    echo "Tiêu đề bài viết: {$post['title']} <br>";
+    echo "Đường dẫn tới ảnh bài viết: {$post['thumbnail']} <br>";
+    echo "Tác giả bài viết: {$post['author']} <br>";
+    echo "Ngày đăng bài viết: {$post['date']} <br>";
+    echo "Mô tả ngắn về bài viết: {$post['description']} <br>";
+    echo "Danh mục bài viết: {$list_category[$post['cat_id']]['title']} <br>";
 } else {
     echo "Không tìm thấy bài viết!";
 }
