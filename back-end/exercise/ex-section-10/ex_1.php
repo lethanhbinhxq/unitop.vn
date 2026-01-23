@@ -29,9 +29,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["btn_login"])) {
         echo "Tên đăng nhập: {$username} <br>";
         echo "Mật khẩu: {$password} <br>";
     } else {
-        foreach ($error as $item) {
-            echo "{$item}<br>";
-        }
+        echo "<pre>";
+        print_r($error);
+        echo "</pre>";
     }
     echo "<br>----------<br>";
 }

@@ -64,9 +64,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["btn_reg"])) {
         echo "Số điện thoại: {$phone} <br>";
         echo "Giới tính: {$show_gender[$gender]} <br>";
     } else {
-        foreach ($error as $item) {
-            echo "{$item}<br>";
-        }
+        echo "<pre>";
+        print_r($error);
+        echo "</pre>";
     }
     echo "<br>----------<br>";
 }

@@ -29,6 +29,8 @@ echo "<br>-------------<br>";
  */
 
 $list_number = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+# Cách 1
 function check_even($n)
 {
     if ($n % 2 == 0)
@@ -39,6 +41,18 @@ function check_even($n)
 $list_even_number = array_filter($list_number, "check_even");
 echo "<pre>";
 print_r($list_even_number);
+echo "</pre>";
+echo "<br>-------------<br>";
+
+# Cách 2
+$list_even = array();
+foreach ($list_even_number as $item) {
+    if ($item % 2 == 0) {
+        $list_even[] = $item;
+    }
+}
+echo "<pre>";
+print_r($list_even);
 echo "</pre>";
 echo "<br>-------------<br>";
 
@@ -115,11 +129,13 @@ $list_post_cat = array(
         </thead>
         <tbody>
             <?php if (!empty($list_post_cat)) {
+                $temp = 0;
                 foreach ($list_post_cat as $cat) {
+                    $temp++;
                     ?>
                     <tr>
                         <td>
-                            <?php echo $cat['id'] ?>
+                            <?php echo $temp ?>
                         </td>
                         <td>
                             <?php echo str_repeat("--", $cat["level"]) . ' ' . $cat['cat_title'] ?>
