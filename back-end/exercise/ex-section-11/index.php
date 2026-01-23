@@ -17,7 +17,7 @@ if (isset($_POST["btn_reg"])) {
     if (isset($_POST["fullname"])) {
         # Kiểm tra họ và tên
         if (empty($_POST["fullname"])) {
-            $error["fullname"] = "Không được bỏ trống họ và tên!";
+            $error["fullname"] = "Không được bỏ trống Họ và tên!";
         } else {
             if (!check_length($_POST["fullname"], 3, 32)) {
                 $error["fullname"] = "Số lượng ký tự từ 3 tới 32 ký tự";
@@ -36,7 +36,7 @@ if (isset($_POST["btn_reg"])) {
     if (isset($_POST["username"])) {
         # Kiểm tra họ và tên
         if (empty($_POST["username"])) {
-            $error["username"] = "Không được bỏ trống tên đăng nhập!";
+            $error["username"] = "Không được bỏ trống Tên đăng nhập!";
         } else {
             if (!check_length($_POST["username"], 6, 32)) {
                 $error["username"] = "Số lượng ký tự từ 6 tới 32 ký tự";
@@ -55,7 +55,7 @@ if (isset($_POST["btn_reg"])) {
     if (isset($_POST["password"])) {
         # Kiểm tra họ và tên
         if (empty($_POST["password"])) {
-            $error["password"] = "Không được bỏ trống mật khẩu!";
+            $error["password"] = "Không được bỏ trống Mật khẩu!";
         } else {
             if (!check_length($_POST["password"], 6, 32)) {
                 $error["password"] = "Số lượng ký tự từ 6 tới 32 ký tự";
@@ -74,7 +74,7 @@ if (isset($_POST["btn_reg"])) {
     if (isset($_POST["phone"])) {
         # Kiểm tra họ và tên
         if (empty($_POST["phone"])) {
-            $error["phone"] = "Không được bỏ trống số điện thoại!";
+            $error["phone"] = "Không được bỏ trống Số điện thoại!";
         } else {
             if (!check_length($_POST["phone"], 10, 10)) {
                 $error["phone"] = "Số lượng ký tự là 10 ký tự";

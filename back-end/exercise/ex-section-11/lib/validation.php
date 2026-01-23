@@ -17,7 +17,7 @@
 
     # Hàm kiểm tra họ và tên
     function is_fullname($fullname) {
-        $pattern = "/^(([A-Z][a-z]*)( [A-Z]{1}[a-z]*)+)$/";
+        $pattern = "/^(([A-ZÀ-Ỹ][a-zà-ỹ]*)(\s[A-ZÀ-Ỹ]{1}[a-zà-ỹ]*)+)$/";
         if (preg_match($pattern, $fullname)) 
             return true;
         return false;
@@ -59,5 +59,5 @@
     function form_error($label_field) {
         global $error;
         if (!empty($error[$label_field])) 
-            echo "<span style='font-weight:bold; color:red;'>{$error[$label_field]}</span><br>";
+            echo "<span style='font-weight:bold; color:red; font-style:italic;'>{$error[$label_field]}</span><br>";
     }
