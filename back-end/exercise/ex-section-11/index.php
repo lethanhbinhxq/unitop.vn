@@ -14,8 +14,10 @@ require "lib/validation.php";
 
 if (isset($_POST["btn_reg"])) {
     $error = array();
+
+    # Kiểm tra họ và tên
+
     if (isset($_POST["fullname"])) {
-        # Kiểm tra họ và tên
         // Không được rỗng
         if (empty($_POST["fullname"])) {
             $error["fullname"] = "Không được bỏ trống Họ và tên!";
@@ -33,47 +35,52 @@ if (isset($_POST["btn_reg"])) {
     # Kiểm tra tên đăng nhập
 
     if (isset($_POST["username"])) {
-        # Kiểm tra họ và tên
+        // Không được rỗng
         if (empty($_POST["username"])) {
             $error["username"] = "Không được bỏ trống Tên đăng nhập!";
+            // Độ dài
+        } elseif (!check_length($username, 6, 32)) {
+            $error["username"] = "Số lượng ký tự từ 6 tới 32 ký tự!";
+            // Định dạng tên đăng nhập
+        } elseif (!is_username($_POST["username"])) {
+            $error["username"] = "Tên đăng nhập có thể bao gồm chữ cái, chữ số, dấu gạch dưới, dấu chấm, độ dài 6 đến 32 ký tự!";
         } else {
-            if (is_username($_POST["username"])) {
-                $username = $_POST["username"];
-            } else {
-                $error["username"] = "Tên đăng nhập có thể bao gồm chữ cái, chữ số, dấu gạch dưới, dấu chấm, độ dài 6 đến 32 ký tự!";
-            }
+            $username = $_POST["username"];
         }
-
-
     }
 
     // # Kiểm tra mật khẩu
 
     if (isset($_POST["password"])) {
-        # Kiểm tra họ và tên
+        // Không được rỗng
         if (empty($_POST["password"])) {
             $error["password"] = "Không được bỏ trống Mật khẩu!";
+            // Độ dài
+        } elseif (!check_length($password, 6, 32)) {
+            $error["password"] = "Số lượng ký tự từ 6 tới 32 ký tự!";
+            // Định dạng mật khẩu
+        } elseif (!is_password($_POST["password"])) {
+            $error["password"] = "Mật khẩu phải bắt đầu bằng chữ in hoa, có thể bao gồm chữ cái, chữ số, ký tự đặc biệt, dấu gạch dưới, độ dài 6 đến 32 ký tự!";
         } else {
-            if (is_password($_POST["password"])) {
-                $password = $_POST["password"];
-            } else {
-                $error["password"] = "Mật khẩu phải bắt đầu bằng chữ in hoa, có thể bao gồm chữ cái, chữ số, ký tự đặc biệt, dấu gạch dưới, độ dài 6 đến 32 ký tự!";
-            }
+            $password = $_POST["password"];
         }
     }
 
     // # Kiểm tra số điện thoại
 
+    # Kiểm tra số điện thoại
     if (isset($_POST["phone"])) {
-        # Kiểm tra họ và tên
+        // Không được rỗng
         if (empty($_POST["phone"])) {
             $error["phone"] = "Không được bỏ trống Số điện thoại!";
+            // Độ dài
+        } elseif (!check_length($phone, 10, 10)) {
+            $error["phone"] = "Số lượng ký tự là 10 ký tự!";
+            // Định dạng mật khẩu
+        } elseif (!is_phone($_POST["phone"])) {
+            $error["phone"] = "Số điện thoại chỉ gồm chữ số, bắt đầu bằng số 0, độ dài 10 chữ số!";
         } else {
-            if (is_phone($_POST["phone"])) {
-                $phone = $_POST["phone"];
-            } else {
-                $error["phone"] = "Số điện thoại chỉ gồm chữ số, độ dài 10 chữ số!";
-            }
+            $phone = $_POST["phone"];
         }
     }
 }
