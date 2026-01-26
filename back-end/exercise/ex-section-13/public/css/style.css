@@ -1,0 +1,166 @@
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 23px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#header,
+#footer {
+    background: #029ef3;
+}
+
+ul#main-menu {
+    text-align: center;
+}
+
+ul#main-menu li {
+    display: inline-block;
+}
+
+ul#main-menu li a {
+    padding: 8px 15px;
+    color: white;
+    display: block;
+}
+
+#content {
+    min-height: 600px;
+    padding: 20px 0px;
+}
+
+#footer {
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li.post-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+a.post-img {
+    display: block;
+    padding-right: 15px;
+    flex: 300px;
+    overflow: hidden;
+}
+
+.post-info {
+    flex: 800px;
+}
+
+.post-title {
+    display: block;
+    font-size: 21px;
+    font-weight: 600;
+    color: #111111;
+    text-decoration: none;
+}
+
+.post-title:hover {
+    color: #4db2ec;
+    text-decoration: none;
+}
+
+.post-category {
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.post-publish {
+    padding-top: 10px;
+}
+
+.post-author {
+    padding-right: 15px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+ul#list-products {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+li.product-item {
+    border: 1px solid #e1e1e1;
+    flex-basis: 32%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+
+li.product-item:hover {
+    border: 1px solid orange;
+}
+
+li.product-item:hover img {
+    transform: scale(1.05);
+    transition: all 0.25s;
+}
+
+.price {
+    color: orange;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.buy-now {
+    color: white;
+    background-color: orange;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: -65px;
+    left: 0px;
+    transition: all 0.1s;
+    text-decoration: none;
+}
+
+li.product-item:hover .buy-now {
+    bottom: 0px;
+}
+
+.product-name {
+    color: gray;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.no-data {
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+}
