@@ -15,7 +15,7 @@
             <ul id="main-menu">
                 <li><a href="?page=home">Trang chủ</a></li>
                 <li><a href="?page=about">Giới thiệu</a></li>
-                <li><a href="?page=news">Tin tức</a></li>
+                <li><a href="?page=post">Tin tức</a></li>
                 <li><a href="?page=product">Sản phẩm</a></li>
                 <li><a href="?page=course">Khóa học</a></li>
                 <li><a href="?page=contact">Liên hệ</a></li>

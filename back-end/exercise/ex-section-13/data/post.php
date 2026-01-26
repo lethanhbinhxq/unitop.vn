@@ -31,7 +31,7 @@ $list_posts = array(
         "thumbnail" => "public/images/post_1.jpg",
         "author" => "Nhóm Tác Giả",
         "date" => "20/01/2026 15:04",
-        "description" => "Đây là chia sẻ của Đại sứ EU tại Việt Nam Julien Guerrier khi nhìn lại quan hệ giữa hai bên trong 5 năm qua.",
+        "description" => "Đây là chia sẻ của Đại sứ EU tại Việt Nam Julien Guerrier khi nhìn lại quan hệ giữa hai bên trong 5 năm qua. Kết quả này cho thấy có đủ cơ sở để tin vào những gì có thể cùng nhau đạt được trong những năm tới.",
         "cat_id" => 1,
     ),
 
@@ -68,43 +68,3 @@ $list_posts = array(
         "cat_id" => 4,
     ),
 );
-
-?>
-
-<div id="content">
-    <h1>Tin tức</h1>
-
-    <?php if (!empty($list_posts)) {
-        ?>
-        <ul>
-            <?php foreach ($list_posts as $post) {
-                ?>
-                <li class="post-item">
-                    <a href="#" class="post-img"><img src=<?php echo $post['thumbnail'] ?> alt=""></a>
-                    <div class="post-info">
-                        <a href="#" class="post-title">
-                            <?php echo $post['title'] ?>
-                        </a>
-                        <div class="post-category">
-                            <?php echo $list_category[$post['cat_id']]['title'] ?>
-                        </div>
-                        <div class="post-publish">
-                            <span class="post-author">
-                                <?php echo $post['author'] ?>
-                            </span>
-                            <span class="post-date">
-                                <?php echo $post['date'] ?>
-                            </span>
-                        </div>
-                        <p class="post-desc">
-                            <?php echo $post['description'] ?>
-                        </p>
-                    </div>
-                </li>
-            <?php }
-            ?>
-        </ul>
-    <?php } else { ?>
-        <div class="no-data">Không tìm thấy bài viết!</div>
-    <?php } ?>
-</div>

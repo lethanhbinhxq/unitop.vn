@@ -1,8 +1,8 @@
 <?php
-function getHeader() {
+function get_header() {
     require "inc/header.php";
 }
 
-function getFooter() {
+function get_footer() {
     require "inc/footer.php";
 }
