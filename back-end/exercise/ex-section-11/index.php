@@ -22,7 +22,7 @@ if (isset($_POST["btn_reg"])) {
         if (empty($_POST["fullname"])) {
             $error["fullname"] = "Không được bỏ trống Họ và tên!";
             // Độ dài
-        } elseif (!check_length($fullname, 3, 32)) {
+        } elseif (!check_length($_POST["fullname"], 3, 32)) {
             $error["fullname"] = "Số lượng ký tự từ 3 tới 32 ký tự!";
             // Định dạng họ và tên
         } elseif (!is_fullname($_POST["fullname"])) {
@@ -39,7 +39,7 @@ if (isset($_POST["btn_reg"])) {
         if (empty($_POST["username"])) {
             $error["username"] = "Không được bỏ trống Tên đăng nhập!";
             // Độ dài
-        } elseif (!check_length($username, 6, 32)) {
+        } elseif (!check_length($_POST["username"], 6, 32)) {
             $error["username"] = "Số lượng ký tự từ 6 tới 32 ký tự!";
             // Định dạng tên đăng nhập
         } elseif (!is_username($_POST["username"])) {
@@ -56,7 +56,7 @@ if (isset($_POST["btn_reg"])) {
         if (empty($_POST["password"])) {
             $error["password"] = "Không được bỏ trống Mật khẩu!";
             // Độ dài
-        } elseif (!check_length($password, 6, 32)) {
+        } elseif (!check_length($_POST["password"], 6, 32)) {
             $error["password"] = "Số lượng ký tự từ 6 tới 32 ký tự!";
             // Định dạng mật khẩu
         } elseif (!is_password($_POST["password"])) {
@@ -74,9 +74,9 @@ if (isset($_POST["btn_reg"])) {
         if (empty($_POST["phone"])) {
             $error["phone"] = "Không được bỏ trống Số điện thoại!";
             // Độ dài
-        } elseif (!check_length($phone, 10, 10)) {
+        } elseif (!check_length($_POST["phone"], 10, 10)) {
             $error["phone"] = "Số lượng ký tự là 10 ký tự!";
-            // Định dạng mật khẩu
+            // Định dạng số điện thoại
         } elseif (!is_phone($_POST["phone"])) {
             $error["phone"] = "Số điện thoại chỉ gồm chữ số, bắt đầu bằng số 0, độ dài 10 chữ số!";
         } else {
