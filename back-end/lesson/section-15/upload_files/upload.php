@@ -11,7 +11,7 @@ $upload_dir = "uploads/";
 $upload_file = $upload_dir .$_FILES['file']['name'];
 
 if (move_uploaded_file($_FILES['file']['tmp_name'], $upload_file)) {
-    echo "Upload file thành công";
+    echo "<a href='$upload_file'> Download: {$_FILES['file']['name']}</a>";
 }
 else {
     echo "Upload file không thành công";

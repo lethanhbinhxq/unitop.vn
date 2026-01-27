@@ -1,8 +1,7 @@
 <?php require "lib/template.php"?>
 <?php 
 get_header();
-require "data/product.php";
-require "data/post.php";
+
  ?>
 <?php
 $page = !empty($_GET["page"]) ? $_GET["page"] : 'home';

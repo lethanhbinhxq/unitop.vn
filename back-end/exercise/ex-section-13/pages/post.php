@@ -4,6 +4,7 @@
  * 1. Tiêu đề (thẻ a)
  * 2. Mô tả ngắn (thẻ p)
  */
+require "data/post.php";
 ?>
 
 <div id="content">
