@@ -13,7 +13,7 @@ $list_users = array(
     1 => array(
         'id' => 1,
         "fullname" => "Lê Thanh Bình",
-        'username' => 'ltbxq',
+        'username' => 'ltbxq9',
         'password' => md5('X1@oq1ng'),
         'email' => 'binhlethanh623@gmail.com'
     ),

@@ -9,12 +9,31 @@ body {
     margin: 0px auto;
 }
 
-#header, #footer {
+#footer {
     background: #029ef3;
+}
+
+#logo {
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    padding: 20px 10px;
+    font-weight: bold;
+}
+
+#header {
+    position: relative;
+}
+
+#user_login {
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 ul#main-menu {
     text-align: center;
+    background: #029ef3;
 }
 
 ul#main-menu li {
