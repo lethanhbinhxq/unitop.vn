@@ -46,11 +46,30 @@ h1 {
     margin-bottom: 15px;
 }
 
+h1.post_title {
+    margin-top: 30px;
+    text-align: left;
+}
+
 h2 {
     font-size: 20px;
     font-weight: bold;
-    text-align: center;
     margin-bottom: 10px;
+}
+
+h2.title-page {
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#post_desc {
+    font-style: italic;
+    margin-bottom: 15px;
 }
 
 input {
@@ -61,4 +80,31 @@ input[type="text"] {
     width: 100%;
     padding: 6px 10px;
     border: 1px solid #e8e8e8;
+}
+
+label, input {
+    margin: 10px 0px;
+}
+
+#thumbnail, #btn_add {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 6px 10px;
+    border: 1px solid #e8e8e8;
+    margin: 10px 0px;
 }

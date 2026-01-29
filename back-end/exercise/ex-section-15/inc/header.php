@@ -7,7 +7,7 @@
     <title>Hệ thống điều hướng cơ bản</title>
     <link rel="stylesheet" href="public/css/reset.css">
     <link rel="stylesheet" href="public/css/style.css">
-    <script src="ckeditor/ckeditor.js"></script>
+    <script src="plugin/ckeditor/ckeditor.js"></script>
 </head>
 
 <body>
@@ -18,6 +18,7 @@
                 <li><a href="?page=about">Giới thiệu</a></li>
                 <li><a href="?page=news">Tin tức</a></li>
                 <li><a href="?page=product">Sản phẩm</a></li>
+                <li><a href="?page=add_post">Thêm bài viết</a></li>
                 <li><a href="?page=course">Khóa học</a></li>
                 <li><a href="?page=contact">Liên hệ</a></li>
             </ul>
