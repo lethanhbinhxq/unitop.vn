@@ -19,7 +19,7 @@ use PHPMailer\PHPMailer\Exception;
 require 'PhPMailer-master/PHPMailer-master/src/Exception.php';
 require 'PhPMailer-master/PHPMailer-master/src/PHPMailer.php';
 require 'PhPMailer-master/PHPMailer-master/src/SMTP.php';
-function send_email($recipient = array(), $subject = "", $body = "", $options = array("cc" => array(), "bcc" => array(), "attachment" => array(), "alt_body" => ""))
+function send_email($send_to_email = "", $send_to_fullname = "", $subject = "", $body = "", $options = array("cc" => array(), "bcc" => array(), "attachment" => array(), "alt_body" => ""))
 {
     global $config_email;
     //Create an instance; passing `true` enables exceptions
@@ -40,26 +40,14 @@ function send_email($recipient = array(), $subject = "", $body = "", $options = 
         $mail->setFrom($config_email['username'], $config_email['fullname']);
 
         //Recipients
-        if (!empty($recipient)) {
-            foreach ($recipient as $item) {
-                if (!empty($item['address'])) {
-                    $address = $item['address'];
-                }
-                if (!empty($item['name'])) {
-                    $name = $item['name'];
-                }
-                if (isset($address)) {
-                    if (isset($name)) {
-                        $mail->addAddress($address, $name);
-                    } else {
-                        $mail->addAddress($address);
-                    }
-                } else {
-                    $mail->ErrorInfo = 'Không có địa chỉ email người nhận!';
-                }
+        if (!empty ($send_to_email)) {
+            if (!empty($send_to_fullname)) {
+                $mail->addAddress($send_to_email, $send_to_fullname);
+            } else {
+                $mail->addAddress($send_to_email);
             }
         } else {
-            $mail->ErrorInfo = 'Không có địa chỉ email người nhận!';
+            $mail->ErrorInfo = "Chưa có địa chỉ người nhận!";
         }
         $mail->addReplyTo($config_email['username'], $config_email['fullname']);
 
