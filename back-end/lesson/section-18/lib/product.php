@@ -1,0 +1,30 @@
+<?php
+
+function get_cat_by_id($cat_id) {
+    global $list_product_cat;
+    if (array_key_exists($cat_id, $list_product_cat)) {
+        $list_product_cat[$cat_id]['url'] = "?mod=product&act=main&id={$cat_id}";
+        return $list_product_cat[$cat_id];
+    }
+    return false;
+}
+
+function get_list_product_by_cat_id($cat_id) {
+    global $list_product;
+    $result = array();
+    foreach ($list_product as $product) {
+        if ($product['cat_id'] == $cat_id) {
+            $product['url'] = "?mod=product&act=detail&id={$product['id']}";
+            $result[] = $product;
+        }
+    }
+    return $result;
+}
+
+function get_product_by_id($id) {
+    global $list_product;
+    if (array_key_exists($id, $list_product)) {
+        return $list_product[$id];
+    }
+    return false;
+}

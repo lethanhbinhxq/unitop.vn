@@ -66,8 +66,8 @@ function send_email($send_to_email = "", $send_to_fullname = "", $subject = "", 
         }
 
         //Attachments
-        if (!empty($options["addAttachment"])) {
-            foreach ($options["addAttachment"] as $item) {
+        if (!empty($options["attachment"])) {
+            foreach ($options["attachment"] as $item) {
                 $mail->addAttachment($item);
             }
         }

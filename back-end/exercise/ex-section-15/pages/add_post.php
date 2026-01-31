@@ -70,12 +70,11 @@ if (isset($_POST["btn_add"])) {
                 $upload_file = $new_upload_file;
                 // $error["file_exists"] = "File đã tồn tại trên hệ thống";
             }
-
-            if (empty($error['thumbnail'])) {
-                move_uploaded_file($_FILES['thumbnail']['tmp_name'], $upload_file);
-            } else {
-                $upload_file = '';
-            }
+        }
+        if (empty($error['thumbnail'])) {
+            move_uploaded_file($_FILES['thumbnail']['tmp_name'], $upload_file);
+        } else {
+            $upload_file = '';
         }
     }
 }
