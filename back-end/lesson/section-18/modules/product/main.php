@@ -1,9 +1,6 @@
 <?php get_header() ?>
 
 <?php
-require "lib/product.php";
-require "lib/number.php";
-require "data/product.php";
 #Lấy thông tin danh mục
 $cat_id = $_GET["id"];
 $info_cat = get_cat_by_id($cat_id);

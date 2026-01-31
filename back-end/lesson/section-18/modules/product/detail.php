@@ -1,9 +1,7 @@
 <?php get_header() ?>
 
 <?php
-require "data/product.php";
-require 'lib/product.php';
-require 'lib/number.php';
+
 $id = (int) $_GET["id"];
 #Lấy dữ liệu sản phẩm theo id
 $item = get_product_by_id($id);
@@ -26,9 +24,9 @@ $item = get_product_by_id($id);
                             <?php echo $item['product_desc']?>
                         </div>
                         <div class="num-order-wp">
-                            <span>Số lượng:</span>
-                            <input type="text" id="num-order" name="num-order" value="1">
-                            <a href="?mod=card&act=add&id=1" title="" class="add-to-cart">Thêm giỏ hàng</a>
+                            <!-- <span>Số lượng:</span>
+                            <input type="text" id="num-order" name="num-order" value="1"> -->
+                            <a href="<?php echo $item['url_add_cart']?>" title="" class="add-to-cart">Thêm giỏ hàng</a>
                         </div>
 
                     </div>

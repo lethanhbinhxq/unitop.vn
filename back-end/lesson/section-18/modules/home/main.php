@@ -1,9 +1,6 @@
 <?php get_header() ?>
 
 <?php
-require "data/product.php";
-require 'lib/product.php';
-require 'lib/number.php';
 
 $info_cat_mobile = get_cat_by_id(1);
 $info_cat_laptop = get_cat_by_id(2);

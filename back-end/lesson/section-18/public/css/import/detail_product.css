@@ -63,7 +63,7 @@
     background: #3a9800;
     color: #fff!important;
     font-size: 13px;
-    margin-left: 15px;
+    /* margin-left: 15px; */
     border-radius: 3px;
 }
 .add-to-cart:hover{ background: #318000;}

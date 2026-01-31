@@ -1,4 +1,16 @@
-<?php require "lib/template.php"?>
+<?php 
+session_start();
+ob_start();
+require "data/product.php";
+require "data/pages.php";
+
+require 'lib/product.php';
+require 'lib/number.php';
+require "lib/template.php";
+require "lib/data.php";
+require "lib/cart.php";
+?>
+
 <?php
 $mod = !empty($_GET["mod"]) ? $_GET["mod"] : 'home';
 $act = !empty($_GET["act"]) ? $_GET["act"] : 'main';
