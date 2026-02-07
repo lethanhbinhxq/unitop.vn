@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức về giá trị</title>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+</head>
+
+<body>
+    <style>
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#form_login").submit(function () {
+                var str_result;
+                var username = $("#username").val();
+                var password = $("#password").val();
+                
+                str_result = "<p>Username: <strong id=\"val_username\">" + username + "</strong></p><p>Password: <strong id=\"val_password\">" + password + "</strong></p>"
+                $(".result").html(str_result);
+                return false;
+            });
+        });
+    </script>
+
+    <h1>Form đăng nhập</h1>
+    <form action="" id="form_login" method="POST">
+        <label for="username">Username</label>
+        <input type="text" name="username" value="" id="username">
+        <label for="password">Password</label>
+        <input type="password" name="password" value="" id="password">
+        <input type="submit" value="Đăng nhập" name="btn_login">
+        <div class="result">
+
+        </div>
+    </form>
+</body>
+
+</html>

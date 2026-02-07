@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector định vị</title>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // 1. Chọn phần tử có chỉ số 1 => màu đỏ
+            // $('p:eq(1)').css('color', 'red');
+            // 2. chọn phần tử p đầu tiên
+            // $("p:first").css('color', 'red');
+            // 3. Chọn ptu cuối cùng
+            // $("p:last").css('color', 'red');
+            // 4. Chọn ptu có chỉ số lớn hơn 1
+            // $('p:gt(1)').css('color', 'red');
+            // 5. Chọn ptu có chỉ số bé hơn 3
+            // $('p:lt(3)').css('color', 'red');
+            // 6. Chọn ptu chỉ số lẻ
+            // $('p:odd').css('color', 'red');
+            // 7. Chọn ptu chỉ số chẵn
+            // $('p:even').css('color', 'red');
+            // 8. Chọn tất cả ptu p ngoại trừ chỉ số 2
+            $("p:not('p:eq(2)')").css('color', 'red');
+        });
+    </script>
+    <p>Đoạn văn 0</p>
+    <p>Đoạn văn 1</p>
+    <p>Đoạn văn 2</p>
+    <p>Đoạn văn 3</p>
+    <p>Đoạn văn 4</p>
+    <p>Đoạn văn 5</p>
+    <p>Đoạn văn 6</p>
+    <a href="">Link 1</a>
+    <a href="">Link 2</a>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức về giá trị</title>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+</head>
+
+<body>
+    <style>
+        .box {
+            padding: 50px 100px;
+            background: #333;
+            color: white;
+            float: left;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.box').click(function(){
+                $(this).css({'background': 'red', 'padding': '100px 200px'});
+                $("#css_bg").text($(this).css('background'));
+            });
+        });
+    </script>
+
+    <div class="box">
+        BOX
+    </div>
+    <p>Background: <span id="css_bg"></span></p>
+</body>
+
+</html>

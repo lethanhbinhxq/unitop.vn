@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức xử lý thuộc tính</title>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // Click vào a hiển thị lên link của hình ảnh thông qua alert
+            // $("a.get_link_img").click(function(){
+                // var link_img;
+                // link_img = $("img").attr("src");
+                // link_img = $("img").attr("title", "Hoa tulip");
+                // alert(link_img);
+
+                // return false;
+            // });
+
+            $("a.remove_attr").click(function(){
+                $("img").removeAttr("src");
+                return false;
+            });
+        });
+    </script>
+
+    <img src="images/hoa.jpg" alt="" title="">
+    <a href="#" class="get_link_img">Lấy link ảnh</a>
+    <a href="#" class="remove_attr">Hủy giá trị thuộc tính</a>
+</body>
+</html>

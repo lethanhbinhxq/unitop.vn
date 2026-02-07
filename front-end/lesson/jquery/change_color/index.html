@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi màu text bằng jquery</title>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('button#btn-red').click(function(){
+                $('p').css('color', 'red')
+            })
+            $('button#btn-green').click(function(){
+                $('p').css('color', 'green')
+            })
+        });
+    </script>
+    <!-- <p>Dữ liệu ban đầu</p> -->
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sequi rerum saepe impedit! Facilis, officia?</p>
+     <button id="btn-red">Đỏ</button>
+     <button id="btn-green">Xanh</button>
+</body>
+</html>

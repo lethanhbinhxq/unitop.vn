@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiệu ứng slide trong jquery</title>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+</head>
+
+<body>
+    <style>
+        #box {
+            width: 400px;
+            padding: 40px;
+            background: #e74c3c;
+            text-align: center;
+            color: white;
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#effect-slideUp").click(function(){
+                $("#box").slideUp(1000, 
+                // function(){
+                //     alert("Done...");
+                // }
+            );
+            });
+
+            $("#effect-slideDown").click(function(){
+                $("#box").slideDown(1000);
+            });
+
+            $("#effect-slideToggle").click(function(){
+                $("#box").slideToggle(1000);
+            });
+        });
+    </script>
+
+    <h1>Hiệu ứng slide trong jquery</h1>
+    <a href="#" id="effect-slideUp">Slide Up</a>
+    <a href="#" id="effect-slideDown">Slide Down</a>
+    <a href="#" id="effect-slideToggle">Slide Toggle</a>
+    <div id="box">BOX</div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit tempora reiciendis sint, ratione sed perspiciatis omnis dolorem, autem, perferendis at alias. Dolorum libero natus distinctio optio. Beatae ipsam incidunt culpa vel nulla veniam eius consequatur tenetur pariatur sunt minima maxime odio cumque quod blanditiis nam corporis, odit, dolores dicta ad mollitia dolorem. Est velit suscipit saepe vitae rerum ullam quae quo, magni a iste mollitia cupiditate nemo consequatur possimus quasi ipsum hic voluptatem numquam assumenda error tempore quod. Culpa, dolores fugit eligendi non perferendis unde tenetur, consequatur quasi hic nostrum id totam alias repellendus provident neque, nobis aliquam debitis quos.</p>    
+</body>
+
+</html>
