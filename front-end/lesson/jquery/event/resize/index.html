@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự kiện resize trong jquery</title>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+</head>
+
+<body>
+    <style>
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var size_width = $(window).width();
+            $("#size_width #result").text(size_width);
+            $(window).resize(function () {
+                size_width = $(window).width();
+                $("#size_width #result").text(size_width);
+            });
+        });
+    </script>
+
+    <h1>Sự kiện resize trong jquery</h1>
+    <p id="size_width">Độ rộng trình duyệt: <strong id="result"></strong></p>
+</body>
+
+</html>

@@ -11,7 +11,8 @@
 
 <body>
     <style>
-        #target, #other {
+        #target,
+        #other {
             display: inline-block;
             padding: 5px;
             margin: 5px;
@@ -20,27 +21,28 @@
             cursor: pointer;
             text-decoration: none;
         }
-        #target:hover, #other:hover {
+
+        #target:hover,
+        #other:hover {
             text-decoration: underline;
         }
     </style>
     <script type="text/javascript">
         $(document).ready(function () {
-            $("a#target").click(function(){
+            $("a#target").click(function () {
                 alert("Bạn vừa click vào target");
             });
 
-            $("a#other").click(function(){
+            $("a#other").click(function () {
                 alert("Bạn vừa click vào other")
                 $("a#target").click();
             });
         });
     </script>
 
-    <div id="wrapper">
-        <h1>Sự kiện click trong jquery</h1>
-        <a href="#" id="target">#target</a>
-        <a href="#" id="other">#other</a>
+    <h1>Sự kiện click trong jquery</h1>
+    <a href="#" id="target">#target</a>
+    <a href="#" id="other">#other</a>
 </body>
 
 </html>
