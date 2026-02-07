@@ -6,70 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider image</title>
     <script src="js/jquery-4.0.0.min.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <style>
-        #wrapper {
-            width: 400px;
-            height: auto;
-            margin-top: 143px;
-            margin-left: 240px;
-        }
-        #show {
-            height: 300px;
-            position: relative;
-        }
-        #show img {
-            width: 100%;
-            height: auto;
-        }
-        #prev {
-            background-image: url("images/prev.png");
-            width: 26px;
-            height: 28px;
-            opacity: 0.6;
-            position: absolute;
-            top: 135px;
-            left: 0px;
-        }
-        #next {
-            background-image: url("images/next.png");
-            width: 26px;
-            height: 28px;
-            opacity: 0.6;
-            position: absolute;
-            top: 135px;
-            right: 0px;
-        }
-
-        #prev:hover, #next:hover {
-            cursor: pointer;
-        }
-
-        #prev:hover {
-            background-image: url("images/prev-hover.png");
-        }
-        #next:hover {
-            background-image: url("images/next-hover.png");
-        }
-        #list_slider_item {
-            height: 60px;
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-        #list_slider_item img {
-            border: 1px solid #C4C4C4;
-        }
-        #list_slider_item img:hover {
-            cursor: pointer;
-        }
-        .border-red {
-            border: 1px solid #FB9393 !important;
-        }
-    </style>
     <script type="text/javascript">
         $(document).ready(function () {
             var first_image = $("#list_slider_item img:first-child");
