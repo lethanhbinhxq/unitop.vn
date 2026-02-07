@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider image</title>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            width: 400px;
+            height: auto;
+            margin-top: 143px;
+            margin-left: 140px;
+        }
+        #show {
+            height: 300px;
+            position: relative;
+        }
+        #show img {
+            width: 100%;
+            height: auto;
+        }
+        #prev {
+            background-image: url("images/prev.png");
+            width: 26px;
+            height: 28px;
+            opacity: 0.6;
+            position: absolute;
+            top: 135px;
+            left: 0px;
+        }
+        #next {
+            background-image: url("images/next.png");
+            width: 26px;
+            height: 28px;
+            opacity: 0.6;
+            position: absolute;
+            top: 135px;
+            right: 0px;
+        }
+
+        #prev:hover, #next:hover {
+            cursor: pointer;
+        }
+
+        #prev:hover {
+            background-image: url("images/prev-hover.png");
+        }
+        #next:hover {
+            background-image: url("images/next-hover.png");
+        }
+        #list_slider_item {
+            height: 60px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #list_slider_item img {
+            border: 1px solid #C4C4C4;
+        }
+        #list_slider_item img:hover {
+            border: 1px solid #FB9393;
+            cursor: pointer;
+        }
+        .border-red {
+            border: 1px solid #FB9393 !important;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var first_image = $("#list_slider_item img:first-child");
+            first_image.toggleClass("border-red");
+            $("#show img").attr("src", first_image.attr("src"));
+
+            $("#list_slider_item img").click(function(){
+                $("#show img").attr("src", $(this).attr("src"));
+                $("#list_slider_item img").removeClass("border-red");
+                $(this).toggleClass("border-red");
+            });
+
+            $("#prev").click(function(){
+                var current_img_src = $("#show img").attr("src");
+                var current_img = $("#list_slider_item").find("img[src='" + current_img_src + "']");
+                var prev_img = current_img.prev("img");
+                if (prev_img.length < 1) {
+                    prev_img = $("#list_slider_item img:last");
+                }
+                $("#list_slider_item img").removeClass("border-red");
+                prev_img.toggleClass("border-red");
+                $("#show img").attr("src", prev_img.attr("src"));
+            });
+
+            $("#next").click(function(){
+                var current_img_src = $("#show img").attr("src");
+                var current_img = $("#list_slider_item").find("img[src='" + current_img_src + "']");
+                var next_img = current_img.next("img");
+                if (next_img.length < 1) {
+                    next_img = $("#list_slider_item img:first");
+                }
+                $("#list_slider_item img").removeClass("border-red");
+                next_img.toggleClass("border-red");
+                $("#show img").attr("src", next_img.attr("src"));
+            });
+        });
+    </script>
+
+    <div id="wrapper">
+        <div id="show">
+            <img src="" alt="">
+            <div id="prev"></div>
+            <div id="next"></div>
+        </div>
+        <div id="list_slider_item">
+            <img src="images/picture-1.png" alt="">
+            <img src="images/picture-2.png" alt="">
+            <img src="images/picture-3.png" alt="">
+            <img src="images/picture-4.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
