@@ -75,3 +75,7 @@
     background: #efefef;
     border-top: 1px solid #dadada;
 }
+
+#cart-empty {
+    min-height: 500px;
+}

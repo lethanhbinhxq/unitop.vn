@@ -9,6 +9,7 @@ require 'lib/number.php';
 require "lib/template.php";
 require "lib/data.php";
 require "lib/cart.php";
+require "lib/url.php";
 ?>
 
 <?php
