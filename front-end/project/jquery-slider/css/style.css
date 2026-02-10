@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#wp_slider {
+    width: 400px;
+}
+
+#show {
+    height: 300px;
+    position: relative;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+#prev, #next {
+    width: 26px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E5E5;
+    color: black;
+    transform: translateY(-50%);
+    opacity: 0.6;
+    position: absolute;
+    top: 50%;
+}
+
+#next {
+    right: 0px;
+}
+
+#prev:hover,
+#next:hover {
+    cursor: pointer;
+    background-color: #9B0C0C;
+    color: #D0D0D0;
+}
+
+ul#list_thumb {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+ul#list_thumb li.thumb_item {
+    border: 2px solid #C4C4C4;
+    width: 80px;
+    opacity: 80%;
+}
+
+#list_thumb li:hover {
+    cursor: pointer;
+}
+
+ul#list_thumb li.thumb_item.active {
+    border: 2px solid #FB9393 !important;
+    opacity: 100%;
+}

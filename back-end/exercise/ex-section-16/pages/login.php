@@ -1,5 +1,8 @@
 <?php
 # Kiểm tra form login đã được submit
+if (is_login() && $page == 'login') {
+    redirect_to("?page=home");
+}
 if (isset($_POST["btn_login"])) {
     $error = array();
     #Kiểm tra username
@@ -32,9 +35,10 @@ if (isset($_POST["btn_login"])) {
             $_SESSION['is_login'] = true;
             $_SESSION['user_login'] = $username;
 
+            // Lưu thông tin đăng nhập vào cookie nếu chọn ghi nhớ đăng nhập
             if (!empty($_POST["remember_me"])) {
-                setcookie('is_login', true, time() + (7 * 24 * 60 * 60));
-                setcookie('user_login', $username, time() + (7 * 24 * 60 * 60));
+                setcookie('is_login', true, time() + 3600);
+                setcookie('user_login', $username, time() + 3600);
             }
 
             redirect_to("?page=home");
@@ -70,12 +74,13 @@ if (isset($_POST["btn_login"])) {
                 <p class="error"><?php echo $error['password'] ?></p>
             <?php } ?>
 
+            <input type="checkbox" name="remember_me" id="remember_me">
+            <label for="remember_me">Ghi nhớ đăng nhập</label>
+
             <input type="submit" value="Đăng nhập" name="btn_login" id="btn_login">
             <?php if (!empty($error['account'])) { ?>
                 <p class="error"><?php echo $error['account'] ?></p>
             <?php } ?>
-            <input type="checkbox" name="remember_me" id="remember_me">
-            <label for="remember_me">Ghi nhớ đăng nhập</label>
         </form>
         <a href="" id="lost_pass">Quên mật khẩu?</a>
     </div>

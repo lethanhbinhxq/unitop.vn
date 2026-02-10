@@ -9,14 +9,14 @@ require "lib/template.php";
 ?>
 
 <?php
-$page = !empty($_GET["page"]) ? $_GET["page"] : 'home';
-$path = "pages/{$page}.php";
-
 # Kiểm tra thông tin đăng nhập có trong cookie không
 if (isset($_COOKIE['is_login']) && isset($_COOKIE['user_login'])) {
-    $_SESSION['is_login'] = $_COOKIE['is_login'];
+    $_SESSION['is_login'] = true;
     $_SESSION['user_login'] = $_COOKIE['user_login'];
 }
+
+$page = !empty($_GET["page"]) ? $_GET["page"] : 'home';
+$path = "pages/{$page}.php";
 
 // Kiểm tra login
 if (!is_login() && $page != 'login') {

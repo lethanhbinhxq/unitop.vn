@@ -1,0 +1,96 @@
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 23px;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#header, #footer {
+    background: #029ef3;
+}
+
+ul#main-menu {
+    text-align: center;
+}
+
+ul#main-menu li {
+    display: inline-block;
+}
+
+ul#main-menu li a {
+    padding: 8px 15px;
+    color: white;
+    display: block;
+}
+
+/* Multi template */
+#header.mod-page {
+    background: #f3a902;
+}
+
+#header.mod-product {
+    background: black;
+}
+
+#content {
+    min-height: 600px;
+    padding: 20px 0px;
+}
+
+.add_new {
+    color: #029ef3;
+}
+.add_new:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+/* Data & Pagination */
+.table_data {
+    width: 100%;
+}
+.table_data tr td {
+    border-bottom: 1px solid #333;
+    padding: 8px 15px;
+}
+
+.table_data thead tr td {
+    font-weight: bold;
+}
+
+.num_rows {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 10px;
+    float: left;
+}
+
+ul.paging {
+    float: right;
+    margin-top: 10px;
+}
+ul.paging li {
+    float: left;
+    padding: 0px 2px;
+}
+ul.paging li a {
+    display: block;
+    padding: 5px 10px;
+    color: #333;
+    border: 1px solid #dedede;
+}
+
+ul.paging li.active a {
+    border: 1px solid red;
+    color: red;
+}
+
+#footer {
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+}
