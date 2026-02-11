@@ -12,6 +12,7 @@ $(document).ready(function() {
             success: function(data) {
                 sub_total.text(data.sub_total);
                 $("#total-price span").text(data.total);
+                $("#num").text(data.num_order)
             },
             error: function(xhr, ajaxOptions, thrownError) {
                 console.log(xhr.status);
