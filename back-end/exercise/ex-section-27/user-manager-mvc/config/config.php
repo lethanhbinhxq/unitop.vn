@@ -11,7 +11,7 @@
  * 
  */
 
-$config['base_url'] = "http://localhost/unitop/back-end/lesson/section-27/user-manager-mvc";
+$config['base_url'] = "http://localhost/unitop.vn/back-end/exercise/ex-section-27/user-manager-mvc";
 
 
 $config['default_module'] = 'home';

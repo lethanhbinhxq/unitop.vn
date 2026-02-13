@@ -15,13 +15,12 @@ require CONFIGPATH . DIRECTORY_SEPARATOR . 'autoload.php';
 
 // Include core database
 require LIBPATH . DIRECTORY_SEPARATOR . 'database.php';
+require LIBPATH . DIRECTORY_SEPARATOR . 'users.php';
+
 
 // Include core base
 
 require COREPATH . DIRECTORY_SEPARATOR . 'base.php';
-
-
-
 
 if (is_array($autoload)) {
     foreach ($autoload as $type => $list_auto) {

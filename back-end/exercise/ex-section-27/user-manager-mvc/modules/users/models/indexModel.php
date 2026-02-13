@@ -9,3 +9,11 @@ function get_user_by_id($id) {
     $item = db_fetch_row("SELECT * FROM `tbl_users` WHERE `user_id` = {$id}");
     return $item;
 }
+
+function check_login($username, $password) {
+    $num_rows = db_num_rows("SELECT * FROM `tbl_users` WHERE `username` = '{$username}' AND `password` = '{$password}'");
+    if ($num_rows < 1) {
+        return false;
+    }
+    return true;
+}

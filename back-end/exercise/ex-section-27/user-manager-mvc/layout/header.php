@@ -12,6 +12,11 @@
 <body>
     <div id="wrapper">
         <div id="header">
+            <a href="" id="logo">UNITOP</a>
+            <div id="user_login">
+                <p>Xin chào <strong><?php if (is_login()) echo info_user('fullname'); ?></strong> (<a href="?mod=users&action=logout">Thoát</a>)</p>
+            </div>
+            
             <ul id="main-menu">
                 <li><a href="?">Trang chủ</a></li>
                 <li><a href="?mod=page&controller=index&action=detail&id=1">Giới thiệu</a></li>

@@ -8,9 +8,25 @@ body {
     width: 960px;
     margin: 0px auto;
 }
-
-#header, #footer {
+#logo {
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    padding: 20px 10px;
+    font-weight: bold;
+}
+#main-menu, #footer {
     background: #029ef3;
+}
+
+#header {
+    position: relative;
+}
+
+#user_login {
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 ul#main-menu {
