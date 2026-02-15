@@ -11,7 +11,7 @@
  * 
  */
 
-$config['base_url'] = "http://localhost/unitop.vn/back-end/exercise/ex-section-27/user-manager-mvc";
+$config['base_url'] = "http://http://localhost/unitop.vn/back-end/exercise/ex-section-27/shopping-cart-mvc";
 
 
 $config['default_module'] = 'home';
