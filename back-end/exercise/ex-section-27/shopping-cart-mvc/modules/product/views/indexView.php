@@ -1,5 +1,6 @@
-<?php 
-get_header(); ?>
+<?php
+get_header();
+?>
 
 <div id="main-content-wp" class="category-product-page">
     <div class="wp-inner clearfix">
@@ -7,155 +8,27 @@ get_header(); ?>
         <div id="content" class="fl-right">
             <div class="section list-cat">
                 <div class="section-head">
-                    <h3 class="section-title">Laptop</h3>
-                    <p class="section-desc">Có 20 sản phẩm trong mục này</p>
+                    <h3 class="section-title"><?php echo $info_cat['cat_title'] ?></h3>
+                    <p class="section-desc">Có <?php echo count($list_products); ?> sản phẩm trong mục này</p>
                 </div>
                 <div class="section-detail">
                     <ul class="list-item clearfix">
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-product.png" alt="">
-                            </a>
-                            <a href="?page=detail_product" title="" class="title">Lenovo IdeaPad 100S</a>
-                            <p class="price">5.000.000đ</p>
-                        </li>
+                        <?php if (!empty($list_products)) {
+                            foreach ($list_products as $item) { ?>
+                                <li>
+                                    <a href="?mod=product&action=detail&id=<?php echo $item['id']; ?>" title="" class="thumb">
+                                        <img src="<?php echo $item['product_thumb'] ?>" alt="">
+                                    </a>
+                                    <a href="?mod=product&action=detail&id=<?php echo $item['id']; ?>" title=""
+                                        class="title"><?php echo $item['product_title']; ?></a>
+                                    <p class="price"><?php echo currency_format($item['price']); ?></p>
+                                </li>
+                            <?php }
+                        } ?>
                     </ul>
                 </div>
             </div>
-            <div class="section" id="pagenavi-wp">
+            <!-- <div class="section" id="pagenavi-wp">
                 <div class="section-detail">
                     <ul id="list-pagenavi">
                         <li class="active">
@@ -170,7 +43,7 @@ get_header(); ?>
                     </ul>
                     <a href="" title="" class="next-page"><i class="fa fa-angle-right"></i></a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

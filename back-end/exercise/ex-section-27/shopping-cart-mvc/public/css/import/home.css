@@ -21,7 +21,7 @@
     line-height: 21px;
 }
 
-#main-menu-wp .list-item li.active a {
+#main-menu-wp .list-item li.active a, .error {
     font-family: 'Roboto Medium';
     font-weight: normal;
     color: #c10000;
