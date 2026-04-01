@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global và Function Scope</title>
+</head>
+<body>
+    <h1>Global và Function Scope</h1>
+    <script>
+        var x = 10;
+        function test() {
+            var y = 12;
+            x = 20;
+            // document.write(x);
+            document.write(y);
+        }
+        // document.write(x);
+        test();
+    </script>
+</body>
+</html>
