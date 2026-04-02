@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc vòng lặp for in trong js</title>
+</head>
+<body>
+    <h1>Cấu trúc vòng lặp for in trong js</h1>
+    <script>
+        let person = {
+            fullname: 'Lê Thanh Bình',
+            age: 23,
+            gender: 'female'
+        }
+        for (let key in person) {
+            document.write(key + ": " + person[key] + "<br>");
+        }
+
+        let myColor = ['red', 'green', 'blue'];
+        for (let key in myColor) {
+            document.write(myColor[key] + "<br>");
+        }
+    </script>
+</body>
+</html>
