@@ -8,20 +8,25 @@
 <body>
     <h1>Thêm và xóa phần tử ra khỏi mảng</h1>
     <script>
-        let list_users = ['Lê', 'Thanh', 'Bình'];
-        list_users.push('A');
-        list_users.unshift('B');
-        console.log(list_users);
+        // let list_users = ['Lê', 'Thanh', 'Bình'];
+        // list_users.push('A');
+        // list_users.unshift('B');
+        // console.log(list_users);
 
-        // Tạo 1 mảng, sau đó đưa tất cả các số chẵn vào mảng con
-        let list_number = [2, 3, 45, 66, 88, 123, 345, 26];
-        let list_even = [];
-        for (let value of list_users) {
-            if (value % 2 == 0) {
-                list_even.push(value);
-            }
-        }
-        console.log(list_even);
+        // // Tạo 1 mảng, sau đó đưa tất cả các số chẵn vào mảng con
+        // let list_number = [2, 3, 45, 66, 88, 123, 345, 26];
+        // let list_even = [];
+        // for (let value of list_users) {
+        //     if (value % 2 == 0) {
+        //         list_even.push(value);
+        //     }
+        // }
+        // console.log(list_even);
+
+        let list_users = ['Lê', 'Thanh', 'Bình'];
+        list_users.shift();
+        list_users.pop();
+        console.log(list_users);
     </script>
 </body>
 </html>
