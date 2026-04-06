@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 5 - Viết hàm kiểm tra tính chẵn của một số</title>
+</head>
+
+<body>
+    <h1>Bài tập 5 - Viết hàm kiểm tra tính chẵn của một số</h1>
+    <script>
+        // 5. Viết hàm isEven(value) kiểm tra tính chẵn của một số
+        /*
+        input: value = 4
+        output: true
+        */
+        function isEven(value) {
+            if (value % 2 == 0) return true;
+            return false;
+        }
+
+        let value = 4;
+        if (isEven(value)) {
+            document.write(value + " là số chẵn");
+        } else {
+            document.write(value + " là số lẻ");
+        }
+    </script>
+</body>
+
+</html>
