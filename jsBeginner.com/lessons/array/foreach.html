@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duyệt mảng bằng foreach trong JS</title>
+</head>
+<body>
+    <h1>Duyệt mảng bằng foreach trong JS</h1>
+    <script>
+        let list_number = [1, 2, 3, 4, 8, 10, 12];
+        let t = 0;
+        // list_number.forEach(function(curVal, index) {
+        //     t += curVal;
+        //     document.write(index + ": " + curVal + "<br>");
+        // });
+        // document.write("Tổng: " + t);
+
+        list_number.forEach(function(curVal, index, arr) {
+            arr[index] = curVal * 15;
+        });
+        document.write(list_number);
+    </script>
+</body>
+</html>
