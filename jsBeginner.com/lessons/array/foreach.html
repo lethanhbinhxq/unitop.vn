@@ -16,9 +16,14 @@
         // });
         // document.write("Tổng: " + t);
 
-        list_number.forEach(function(curVal, index, arr) {
+        // list_number.forEach(function(curVal, index, arr) {
+        //     arr[index] = curVal * 15;
+        // });
+
+        function my_func (curVal, index, arr) {
             arr[index] = curVal * 15;
-        });
+        }
+        list_number.forEach(my_func);
         document.write(list_number);
     </script>
 </body>
