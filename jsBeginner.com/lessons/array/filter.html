@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lọc mảng với filter JS</title>
+</head>
+<body>
+    <h1>Lọc mảng với filter JS</h1>
+    <script>
+        let list_number = [45, 4, 32, 5, 9, 126];
+        let result;
+        function check_odd(k) {
+            return k % 2 != 0;
+        }
+        result = list_number.filter(check_odd);
+        console.log(result);
+    </script>
+</body>
+</html>
