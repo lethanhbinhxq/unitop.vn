@@ -17,8 +17,16 @@
         const h2 = document.getElementsByTagName('h2');
         console.log(h2);
 
-        h2[0].style.color = 'brown';
-        h2[1].style.color = 'green';
+        // h2[0].style.color = 'brown';
+        // h2[1].style.color = 'green';
+
+        // for (let i = 0; i < h2.length; i++) {
+        //     h2[i].style.color = "red";
+        // }
+
+        for (let element of h2) {
+            element.style.color = "red";
+        }
     </script>
 </body>
 </html>
