@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js DOM - Change HTML, Text</title>
+</head>
+<body>
+    <h1>Js DOM - Change HTML, Text</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint minus deleniti earum similique. Provident minima sapiente ullam rerum esse!</p>
+    <h2 id="demo">First content!</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, omnis dignissimos in necessitatibus impedit dolor tempora ad! Dicta, esse animi.</p>
+    <div id="result">
+        <!-- Kết quả -->
+    </div>
+    <script>
+        const demo = document.getElementById('demo');
+        console.log(demo.innerHTML);
+        console.log(demo.innerText);
+
+        let total = 2003;
+        const result = document.getElementById('result');
+        // result.innerText = total;
+        result.innerHTML = "<b>Thành tiền: </b>" + total + "đ";
+    </script>
+</body>
+</html>
