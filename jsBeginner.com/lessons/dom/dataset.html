@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HTML DOM Dataset</title>
+</head>
+<body>
+    <div id="user" data-id = "2363" data-username="ltbxq" data-age="23" data-date-of-birth="">Lê Thanh Bình</div>
+    <script>
+        const user = document.getElementById('user');
+        console.log(user.dataset)
+        console.log(user.dataset.age);
+        user.dataset.dateOfBirth = "23/06/2003";
+        delete user.dataset.dateOfBirth;
+        console.log(user.dataset)
+    </script>
+</body>
+</html>
