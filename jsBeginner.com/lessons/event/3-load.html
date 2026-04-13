@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load event js</title>
+</head>
+<body>
+    <h1>Load event js</h1>
+    <!-- <img src="computer.jpg" onload="alert('Img loaded')" style="max-width: 100%;" alt=""> -->
+    <img src="computer.jpg" style="max-width: 100%;" alt="">
+    <script>
+        // Kích hoạt khi trang web được load xong
+        // 1. Load trang
+        window.addEventListener('load', function(){
+            alert('Window loaded');
+        })
+
+        // 2. Load hình ảnh
+        const imgElement = document.querySelector('img');
+        imgElement.addEventListener('load', function() {
+            alert("Img loaded and remove loading icon")
+        })
+    </script>
+</body>
+</html>
