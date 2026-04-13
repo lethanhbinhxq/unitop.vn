@@ -37,10 +37,7 @@
     </form>
     <br> <br>
 
-    <div id="display_fullname"></div>
-    <div id="display_username"></div>
-    <div id="display_password"></div>
-    <div id="display_city"></div>
+    <div id="result"></div>
 
     <script>
         /*
@@ -61,25 +58,26 @@
             const fullname = document.getElementById('fullname').value;
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
-            const cityVal = document.getElementById('city').value;
-            const list_city = document.querySelectorAll('select#city option');
-            let city = "";
-            for (let item of list_city) {
-                if (item.value == cityVal) {
-                    city = item.innerText;
-                    break;
-                }
+            const city_id = document.getElementById('city').value;
+            
+            function show_city(city_id) {
+                let list_city = [];
+                list_city[1] = "Hà Nội"
+                list_city[2] = "TP.HCM"
+                list_city[3] = "Đà Nẵng"
+                list_city[4] = "Thành phố khác"
+                return list_city[city_id]
             }
             
-            const display_fullname = document.getElementById('display_fullname');
-            const display_username = document.getElementById('display_username');
-            const display_password = document.getElementById('display_password');
-            const display_city = document.getElementById('display_city');
+            const result = document.getElementById('result');
+            const data = `
+            Họ tên: <strong>${fullname}</strong> <br>
+            Username: <strong>${username}</strong> <br>
+            Mật khẩu: <strong>${password}</strong> <br>
+            Thành phố: <strong>${show_city(city_id)}</strong> <br>
+            `
 
-            display_fullname.innerHTML = "Tên: <strong>" + fullname + "</strong>"
-            display_username.innerHTML = "Username: <strong>" + username + "</strong>"
-            display_password.innerHTML = "Mật khẩu: <strong>" + password + "</strong>"
-            display_city.innerHTML = "Thành phố: <strong>" + city + "</strong>"
+            result.innerHTML = data;
             e.preventDefault();
         })
     </script>
