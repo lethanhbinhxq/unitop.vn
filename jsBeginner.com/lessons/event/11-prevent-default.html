@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevent Default JS</title>
+</head>
+<body>
+    <h1>Prevent Default JS</h1>
+    <a href="">Unitop.vn</a>
+    <script>
+        const aElement = document.querySelector('a');
+        console.log(aElement);
+        aElement.addEventListener('click', function() {
+            console.log(aElement.innerText);
+            // Cách 1
+            e.preventDefault();
+            // Cách 2
+            return false
+        })
+    </script>
+</body>
+</html>
