@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event focus and blur</title>
+    <title>Event change js</title>
 </head>
 <body>
-    <h1>Event focus and blur</h1>
+    <h1>Event change js</h1>
     <form action="" id="register">
         <fieldset>
             <legend>Register form</legend>
@@ -34,13 +34,14 @@
 
     <script>
         const username = document.getElementById('username');
-        username.addEventListener('focus', function() {
-            console.log('Focus username');
-        })
-        username.addEventListener('blur', function() {
-            console.log('Blur username');
+        username.addEventListener('change', function() {
             console.log(username.value);
-        })
+        });
+
+        const city = document.getElementById('city');
+        city.addEventListener('change', function() {
+            console.log(city.value);
+        });
     </script>
 </body>
 </html>
