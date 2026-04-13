@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse over and mouse out js</title>
+</head>
+<body>
+    <h1 onmouseover="console.log('Hover in')" onmouseout="console.log('Hover out')">Mouse over and mouse out js</h1>
+    <script>
+        const h1Element = document.querySelector("h1");
+        h1Element.addEventListener('mouseover', function() {
+            alert("Mouse over");
+        })
+        h1Element.addEventListener('mouseout', function() {
+            alert("Mouse out");
+        })
+    </script>
+</body>
+</html>
