@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event key up - key down js</title>
+    <title>Event submit js</title>
 </head>
 <body>
-    <h1>Event key up - key down js</h1>
+    <h1>Event submit js</h1>
     <form action="" id="register">
         <fieldset>
             <legend>Register form</legend>
@@ -34,14 +34,12 @@
 
     <script>
         const username = document.getElementById('username');
-        username.addEventListener('keydown', function(e) {
-            console.log("Key down", e.which);
-        });
-
-        const city = document.getElementById('city');
-        city.addEventListener('keyup', function() {
-            console.log("Key up");
-        });
+        const registerForm = document.forms.register;
+        // console.log(registerForm);
+        registerForm.addEventListener('submit', function(e) {
+            console.log(username.value);
+            e.preventDefault();
+        })
     </script>
 </body>
 </html>
