@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 6 - Hiển thị thông tin Form đăng ký</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="" id="register">
+        <fieldset>
+            <legend>Register form</legend>
+            <label for="fullname">Fullname</label>
+            <br>
+            <input type="text" id="fullname" autocomplete="off">
+            <br>
+            <label for="username">Username</label>
+            <br>
+            <input type="text" id="username" autocomplete="off">
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" id="password" autocomplete="off">
+            <br>
+            <label for="city">City</label>
+            <br>
+            <select name="city" id="city">
+                <option value="">---Chọn---</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">TP.HCM</option>
+                <option value="3">Đà Nẵng</option>
+                <option value="4">Thành phố khác</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Login Now">
+        </fieldset>
+    </form>
+    <br> <br>
+
+    <div id="result"></div>
+
+    <script>
+        /*
+        Hiển thị thông tin form đăng ký:
+            - Fullname
+            - Username
+            - Password
+            - City
+        -------------
+        Tên: Bình
+        Username: ltbxq
+        Mật khẩu: abc@123
+        Thành phố: TP.HCM
+         */
+
+        const form = document.forms.register;
+        form.addEventListener('submit', function(e) {
+            const fullname = document.getElementById('fullname').value;
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const cityVal = document.getElementById('city').value;
+            const list_city = document.querySelectorAll('select#city option');
+            let city = "";
+            for (let item of list_city) {
+                if (item.value == cityVal) {
+                    city = item.innerText;
+                    break;
+                }
+            }
+            
+            const result = document.getElementById('result');
+            const display_username = document.getElementById('display_username');
+            const display_password = document.getElementById('display_password');
+            const display_city = document.getElementById('display_city');
+
+            display_fullname.innerHTML = "Tên: <strong>" + fullname + "</strong>"
+            display_username.innerHTML = "Username: <strong>" + username + "</strong>"
+            display_password.innerHTML = "Mật khẩu: <strong>" + password + "</strong>"
+            display_city.innerHTML = "Thành phố: <strong>" + city + "</strong>"
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>
