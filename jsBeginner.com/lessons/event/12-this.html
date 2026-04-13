@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This element</title>
+</head>
+<body>
+    <!-- Cách 1 -->
+    <!-- <h1 onclick="this.innerText = 'clicked'">'This' in Event JS</h1> -->
+    <h1>'This' in Event JS</h1>
+    <script>
+        function show() {
+            console.log(this.innerText);
+        }
+
+        // Cách 2
+        const h1 = document.querySelector('h1');
+        h1.onclick = show;
+
+        // Cách 3
+        h1.addEventListener('click', function() {
+            this.innerText = "Clicked";
+            this.parentNode.style.background = 'pink';
+        })
+    </script>
+</body>
+</html>
