@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 7 - Thay đổi ảnh khi hover JS</title>
+</head>
+
+<body>
+    <h1>Thay đổi ảnh khi hover JS</h1>
+    <img src="img/libazz-fashion-jacket-1.jpeg" hover="img/libazz-fashion-jacket-2.jpeg" alt="">
+    <img src="img/libazz-fashion-bag-1.jpeg" hover="img/libazz-fashion-bag-2.jpeg" alt="">
+
+    <script>
+        const list_img = document.querySelectorAll('img');
+        for (let img of list_img) {
+            let src = img.getAttribute('src');
+            let hover = img.getAttribute('hover');
+            
+            img.addEventListener('mouseover', function () {
+                this.setAttribute('src', hover);
+            })
+
+            img.addEventListener('mouseout', function () {
+                this.setAttribute('src', src);
+            })
+        }
+    </script>
+</body>
+
+</html>
