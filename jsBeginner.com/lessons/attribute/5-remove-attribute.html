@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức làm việc thuộc tính trên DOM</title>
+</head>
+<body>
+    <a href="" title="Demo title" reviews="123">Js Beginner</a>
+    <div id="result"></div>
+    <script>
+        const aElement = document.querySelector('a');
+        console.log(aElement.getAttribute('reviews'));
+        aElement.removeAttribute('reviews');
+        console.log(aElement.getAttribute('reviews'));
+    </script>
+</body>
+</html>
