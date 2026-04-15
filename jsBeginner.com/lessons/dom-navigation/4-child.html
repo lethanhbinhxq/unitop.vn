@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Node</title>
+</head>
+<body>
+    <h1>Child Node</h1>
+    <a href="">Học lập trình web đi làm</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque non in suscipit omnis molestiae debitis recusandae. Harum, tempora minus.</p>
+    <ul id="main-menu">
+        <li><a href="">item 1</a>
+            <ul class="sub-menu">
+                <li><a href="">item 1.1</a></li>
+                <li><a href="">item 1.2</a></li>
+                <li><a href="">item 1.3</a></li>
+            </ul>
+        </li>
+        <li><a href="">item 2</a></li>
+        <li><a href="">item 3</a></li>
+        <li><a href="">item 4</a></li>
+    </ul>
+
+    <script>
+        const bodyNode = document.body;
+        console.log(bodyNode.childNodes);
+        console.log(bodyNode.children);
+        console.log(bodyNode.children[1]);
+        console.log(bodyNode.querySelector('a'));
+    </script>
+</body>
+</html>
