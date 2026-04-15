@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert After Javascript</title>
+</head>
+<body>
+    <style>
+        .current {
+            color: red;
+        }
+    </style>
+    <h1>Insert After Javascript</h1>
+    <ul id="langs">
+        <li>HTML</li>
+        <li class="current">CSS</li>
+        <li>Javascript</li>
+    </ul>
+    <script>
+        const langs = document.getElementById('langs');
+        const current = document.querySelector('li.current');
+        
+        const liNew = document.createElement('li');
+        liNew.textContent = "PHP";
+
+        // current.before(liNew);
+        current.after(liNew);
+    </script>
+</body>
+</html>
