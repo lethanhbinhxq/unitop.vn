@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+<body>
+    <script>
+        // Tạo div
+        // - #wrapper
+        // - .text-center
+        // - Content div
+        const body = document.body;
+
+        const divWrapper = document.createElement('div');
+        divWrapper.id = 'wrapper';
+        divWrapper.className = 'text-center';
+        divWrapper.innerText = 'Content div'
+        body.appendChild(divWrapper);
+
+        const p = document.createElement('p');
+        p.innerText = "Content p";
+        body.appendChild(p);
+
+        const h1 = document.createElement('h1');
+        h1.innerText = "Heading 1";
+        body.appendChild(h1);
+        
+        console.log(divWrapper);
+    </script>
+</body>
+</html>
