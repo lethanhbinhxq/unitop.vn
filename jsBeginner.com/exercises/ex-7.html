@@ -8,22 +8,45 @@
 </head>
 
 <body>
-    <h1>Thay đổi ảnh khi hover JS</h1>
-    <img src="img/libazz-fashion-jacket-1.jpeg" hover="img/libazz-fashion-jacket-2.jpeg" alt="">
-    <img src="img/libazz-fashion-bag-1.jpeg" hover="img/libazz-fashion-bag-2.jpeg" alt="">
+    <style>
+        ul.products {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            justify-content: space-between;
+            max-width: 500px;
+        }
 
+        .product-item {
+            width: 45%;
+            height: 300px;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <h1>Thay đổi ảnh khi hover JS</h1>
+    <ul class="products">
+        <li class="product-item">
+            <img src="img/libazz-fashion-jacket-1.jpeg" data-src-v1="img/libazz-fashion-jacket-1.jpeg" data-src-v2="img/libazz-fashion-jacket-2.jpeg" alt="">
+        </li>
+        <li class="product-item">
+            <img src="img/libazz-fashion-bag-1.jpeg" data-src-v1="img/libazz-fashion-bag-1.jpeg" data-src-v2="img/libazz-fashion-bag-2.jpeg" alt="">
+        </li>
+    </ul>
     <script>
-        const list_img = document.querySelectorAll('img');
-        for (let img of list_img) {
-            let src = img.getAttribute('src');
-            let hover = img.getAttribute('hover');
-            
-            img.addEventListener('mouseover', function () {
-                this.setAttribute('src', hover);
+        const list_product = document.querySelectorAll('.product-item');
+        for (let product of list_product) {
+            product.addEventListener('mouseover', function () {
+                let srv_v2 = this.querySelector('img').dataset.srcV2;
+                this.querySelector('img').setAttribute('src', srv_v2);
             })
 
-            img.addEventListener('mouseout', function () {
-                this.setAttribute('src', src);
+            product.addEventListener('mouseout', function () {
+                let srv_v1 = this.querySelector('img').dataset.srcV1;
+                this.querySelector('img').setAttribute('src', srv_v1);
             })
         }
     </script>
