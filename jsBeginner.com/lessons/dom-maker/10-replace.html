@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Before After Javascript</title>
+    <title>Replace Child Javascript</title>
 </head>
 <body>
     <style>
@@ -11,7 +11,7 @@
             color: red;
         }
     </style>
-    <h1>Before After Javascript</h1>
+    <h1>Replace Child Javascript</h1>
     <ul id="langs">
         <li>HTML</li>
         <li class="current">CSS</li>
@@ -23,9 +23,7 @@
         
         const liNew = document.createElement('li');
         liNew.textContent = "PHP";
-
-        // current.before(liNew);
-        current.after(liNew);
+        langs.replaceChild(liNew, current);
     </script>
 </body>
 </html>
