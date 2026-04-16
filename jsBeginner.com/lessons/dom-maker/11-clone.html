@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Node Javascript</title>
+</head>
+<body>
+    <h1>Clone Node Javascript</h1>
+    <ul id="menu">
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li class="current"><a href="#">Khóa học</a>
+            <ul class="sub-menu">
+                <li><a href="#">HTML CSS 21 ngày</a></li>
+                <li><a href="#">PHP Master</a></li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        const menu = document.getElementById('menu');
+        const current = document.querySelector('li.current');
+        
+        const cloneLi = current.cloneNode(true);
+        console.log(cloneLi);
+
+        menu.appendChild(cloneLi)
+    </script>
+</body>
+</html>
