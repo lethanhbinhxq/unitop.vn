@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Object</title>
+</head>
+
+<body>
+    <h1>Local Storage Object</h1>
+
+    <script>
+        // OBJECT => JSON.stringify => localStorage => JSON parse => OBJECT
+
+        const LIST_USERS = "LIST_USERS";
+        let user = {
+            fullname: "Lê Thanh Bình",
+            email: "binhlt@chanchinh.vn",
+            age: 23,
+        }
+
+        let users = [
+            {
+                fullname: "Lê Thanh Bình",
+                email: "binhlt@chanchinh.vn",
+                age: 23,
+            },
+            {
+                fullname: "Bình Lê Thanh",
+                email: "binhlethanh623@gmail.com",
+                age: 23,
+            }
+        ]
+
+        console.log(user);
+
+        localStorage.setItem("USER_INFO", JSON.stringify(user));
+
+        let data = JSON.parse(localStorage.getItem("USER_INFO"));
+        console.log(data);
+
+        localStorage.setItem(LIST_USERS, JSON.stringify(users));
+        let users_data = JSON.parse(localStorage.getItem(LIST_USERS));
+        console.log(users_data);
+    </script>
+</body>
+
+</html>
