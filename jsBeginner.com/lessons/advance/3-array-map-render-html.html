@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Map Render HTML</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .products {
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+        }
+
+        li {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .product-item {
+            border: 1px solid #333;
+            width: 300px;
+            padding: 15px 15px;
+        }
+
+        span {
+            display: block;
+        }
+
+        .product-item .product-name {
+            display: block;
+            padding: 5px 0px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-item .product-name:hover {
+            color: red;
+        }
+    </style>
+
+    <h1>Array Map Render HTML</h1>
+    <ul class="products"></ul>
+    <script>
+        // 1. Tạo mảng lưu danh sách sản phẩm
+        let products = [
+            {
+                id: 1,
+                url: '#',
+                product_name: 'Iphone 13 Pro Max',
+                ram: '6 GB',
+                price: '27.290.000',
+                product_thumb: 'https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-xanh-la-thumb-600x600.jpg'
+            },
+            {
+                id: 2,
+                url: '#',
+                product_name: 'Iphone 14 Pro Max',
+                ram: '6 GB',
+                price: '33.990.000',
+                product_thumb: 'https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-tim-thumb-600x600.jpg'
+            }
+        ];
+
+        // 2. Xuất dữ liệu lên html với array map
+        let productsHtml = products.map((element) => {
+            return `
+            <li>
+                <div class="product-item">
+                    <a href="${element.url}" class="product-thumb">
+                        <img src="${element.product_thumb}" alt="">
+                    </a>
+                    <a href="${element.url}" class="product-name">${element.product_name}</a>
+                    <span>Ram: ${element.ram}</span>
+                    <span>Giá: ${element.price}đ</span>
+                </div>
+            </li>
+            `;
+        })
+
+        const productsElement = document.querySelector('.products');
+        productsElement.innerHTML = productsHtml.join("");
+    </script>
+</body>
+
+</html>
