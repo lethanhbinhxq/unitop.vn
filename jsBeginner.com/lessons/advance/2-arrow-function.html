@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <h1>Arrow Function</h1>
+
+    <script>
+        // function sayHi() {
+        //     return "Xin chào";
+        // }
+
+        // let sayHi = function() {
+        //     return "Xin chào";
+        // }
+
+        // let sayHi = () => {
+        //     return "Xin chào";
+        // }
+
+        // let sayHi = () => "Xin chào";
+
+        // function sayHi(name) {
+        //     return `Xin chào ${name}!`;
+        // }
+
+        // let sayHi = (name) => {return `Xin chào ${name}!`};
+
+        // let sayHi = (name) => `Xin chào ${name}`;
+
+        let sayHi = name => `Xin chào ${name}`;
+
+        console.log(sayHi("Bình"));
+
+        let h1Element = document.querySelector('h1');
+        h1Element.addEventListener('click', () => {
+            alert("OK");
+        })
+    </script>
+</body>
+</html>
