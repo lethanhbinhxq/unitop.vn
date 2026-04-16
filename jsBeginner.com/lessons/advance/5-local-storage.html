@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h1>Local Storage</h1>
+    
+    <script>
+        // Lưu thông tin trên trình duyệt
+        /*
+        Mỗi domain mỗi file local storage
+        Dữ liệu được chuyển sang dạng string khi lưu
+        */
+       localStorage.setItem('fullname', 'Lê Thanh Bình');
+       localStorage.setItem('age', '23');
+
+       // Get
+       console.log(localStorage.getItem('fullname'));
+       console.log(localStorage.getItem('age'));
+
+       // Remove
+       localStorage.removeItem('age');
+    </script>
+</body>
+</html>
