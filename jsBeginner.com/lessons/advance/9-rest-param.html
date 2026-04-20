@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter Function</title>
+</head>
+<body>
+    <h1>Rest Parameter Function</h1>
+    <script>
+        let sum = (...args) => {
+            let s = 0;
+            for (let n of args) {
+                s += n;
+            }
+            return s;
+        }
+
+        console.log(sum(10, 25, 34, 46, 232, 1, 23))
+    </script>
+</body>
+</html>
