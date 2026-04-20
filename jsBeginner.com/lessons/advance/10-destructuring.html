@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+
+<body>
+    <h1>Destructuring in JS</h1>
+    <script>
+        // 1. Nhận giá trị từ array, object
+        let my_array = [3, 6, 8];
+        // let a = my_array[0];
+        // let b = my_array[1];
+        // let c = my_array[2];
+
+        let [a, b, c] = my_array;
+
+        console.log(`a = ${a}`);
+        console.log(`b = ${b}`);
+        console.log(`c = ${c}`);
+
+        let my_obj = {
+            fullname: "Lê Thanh Bình",
+            email: "binhlethanh623@gmail.com"
+        }
+        // let fullname = my_obj['fullname'];
+        // let email = my_obj['email'];
+        let { fullname, email } = my_obj;
+
+        console.log(fullname);
+        console.log(email);
+
+        // 2. Default value
+        let [d, e, f, g = 99] = my_array;
+        console.log(g);
+
+        // 3. ...rest
+        let my_array_3 = [3, 26, 18, 23, 45, 55];
+        let [h, i, ...k] = my_array_3;
+        console.log(k);
+
+        // 4. Bỏ qua phần tử
+        let my_array_4 = [3, 26, 18];
+        let [l, , m] = my_array_4;
+        console.log(l, m);
+
+        // 5. Hoán đổi giá trị
+        let n = 10, p = 15;
+        [n, p] = [p, n];
+        console.log(n, p);
+
+        // 6. Nhận giá trị từ function
+        let my_func = (a, b) => {
+            return [a, b];
+        }
+        let [a6, b6] = my_func(24, 68);
+        console.log(a6, b6);
+    </script>
+</body>
+
+</html>
