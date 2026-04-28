@@ -10,6 +10,9 @@
         * {
             box-sizing: border-box;
         }
+        body {
+            margin: 0;
+        }
         #wrapper {
             max-width: 960px;
             margin: 0px auto;
@@ -21,21 +24,34 @@
             color: yellow;
         }
 
+        #wp-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #content, #sidebar {
+            padding: 15px 10px;
+        }
+
         #content {
             background-color: floralwhite;
-            padding: 10px;
+            flex-basis: 100%;
         }
 
         #sidebar {
             background-color: black;
             color: white;
-            padding: 10px;
+            flex-basis: 100%;
         }
 
         /* Small device (landscape phones, 576px and up) */
         @media (min-width: 576px) {
-            #wp-content {
-                display: flex;
+            #content {
+                flex-basis: 70%;
+            }
+            
+            #sidebar {
+                flex-basis: 30%;
             }
         }
     </style>
