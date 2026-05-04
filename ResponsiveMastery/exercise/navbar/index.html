@@ -4,60 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
-    <script src="js/jquery-4.0.0.min.js"></script>
-    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.js"></script>
+    <title>Responsive Navbar</title>
 </head>
 
 <body>
     <div id="wrapper">
         <div id="header">
-            <div class="container">
-                <div id="logo">
-                    <a href="#"><img src="images/vscode.png" alt=""></a>
-                    <a href="#"><span>Visual Studio Code</span></a>
+            <nav>
+                <div class="container d-flex justify-content-between align-items-center">
+                    <a id="navbar-brand" href="#">
+                        <img src="images/vscode.png" alt="">
+                        <span>Visual Studio Code</span>
+                    </a>
+
+                    <ul id="main-menu" class="menu">
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Code</a></li>
+                        <li><a href="#">Update</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Extension</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Learn</a></li>
+                    </ul>
+
+                    <a href="#" id="download">
+                        Download
+                    </a>
+
+                    <ul id="responsive-menu">
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Code</a></li>
+                        <li><a href="#">Update</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Extension</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Learn</a></li>
+                    </ul>
+
+                    <div id="navbar-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
-
-                <ul id="pc-menu" class="menu">
-                    <li><a href="#">Docs</a></li>
-                    <li><a href="#">Code</a></li>
-                    <li><a href="#">Update</a></li>
-                    <li><a href="#">API</a></li>
-                    <li><a href="#">Extension</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Learn</a></li>
-                </ul>
-
-                <div id="download">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
-                    </svg>
-                    <span>Download</span>
-                </div>
-
-                <div id="mobile-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </div>
-            </div>
-
-            <div id="mobile-menu">
-                <ul class="menu">
-                    <li><a href="#">Docs</a></li>
-                    <li><a href="#">Code</a></li>
-                    <li><a href="#">Update</a></li>
-                    <li><a href="#">API</a></li>
-                    <li><a href="#">Extension</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Learn</a></li>
-                </ul>
-            </div>
+            </nav>
         </div>
+        <!-- End header -->
 
         <div id="content" class="container">
             <h1>Responsive navbar website</h1>
@@ -93,7 +90,34 @@
             <p>Iste qui hic, consequatur est fugit veritatis provident magni tempora ipsum earum nesciunt sit placeat
                 laudantium obcaecati velit atque voluptatibus quasi sed voluptas fuga officiis porro dolore? Assumenda,
                 est debitis!</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni sed ipsa numquam expedita quis, commodi
+                voluptate sunt explicabo laudantium quos repellendus quam quas hic? Adipisci inventore ab quae nemo ut.
+            </p>
+            <p>Voluptates corporis, enim maiores porro eaque ducimus numquam, maxime explicabo quia dignissimos nemo
+                asperiores. Esse in recusandae laudantium omnis quia maxime? In, ad esse. Quibusdam pariatur impedit ut
+                quidem culpa?</p>
+            <p>Optio, voluptas maiores molestiae sit expedita itaque sunt incidunt, architecto consequuntur earum
+                sapiente quia cumque numquam ut officia recusandae distinctio explicabo ratione voluptate velit! Iusto
+                modi suscipit rem perferendis quam.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolorem doloremque, dicta iusto itaque
+                magni tempore sit enim impedit, sapiente tempora et labore exercitationem repellendus dolor architecto
+                quisquam beatae officiis.</p>
+            <p>Consectetur quibusdam laborum voluptatum, impedit inventore iusto alias laudantium soluta dicta sunt
+                dolor distinctio tenetur nostrum dolore, atque quas voluptas? Minus debitis ex dolore eos voluptatem.
+                Labore cumque molestiae consectetur.</p>
+            <p>Sed sit vitae minima nisi ex reiciendis sequi quo perspiciatis, rem deleniti reprehenderit ea ut officia,
+                totam dolorum amet provident porro sunt, atque doloremque eos. Et maxime odit voluptas ducimus.</p>
+            <p>Quia voluptas, error aliquam voluptatem dolore doloremque repudiandae repellat similique. Vel, animi
+                maxime excepturi impedit sapiente tempora, at facilis qui nam aut libero voluptatibus officia,
+                architecto ipsa veritatis eligendi quod.</p>
+            <p>Corporis ad quas minima dolore rerum fugit, recusandae dolorum cum reprehenderit itaque accusantium vitae
+                est, ipsa fuga minus voluptatibus eos ipsam omnis, pariatur harum. At nemo iste quos non pariatur.</p>
         </div>
+
+        <!-- End content -->
+
+        <div id="footer"></div>
     </div>
 </body>
 
