@@ -1,6 +1,7 @@
 .container {
     max-width: 960px;
     margin: 0px auto;
+    padding: 0px 10px;
 }
 
 .d-flex {
@@ -95,7 +96,8 @@ nav {
 }
 
 #content {
-    padding: 40px 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #content h1 {
@@ -112,6 +114,7 @@ nav {
 #responsive-menu {
     position: absolute;
     top: 60px;
+    left: 0;
     padding-left: 0;
     padding-top: 15px;
     padding-bottom: 20px;
