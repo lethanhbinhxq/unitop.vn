@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.js"></script>
+    <title>Responsive Navbar</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav>
+                <div class="container d-flex justify-content-between align-items-center">
+                    <a id="navbar-brand" href="#">
+                        <img src="images/vscode.png" alt="">
+                        <span>Visual Studio Code</span>
+                    </a>
+
+                    <ul id="main-menu" class="menu">
+                        <li>
+                            <a href="#">Docs</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Item 1</a></li>
+                                <li><a href="#">Item 2</a></li>
+                                <li><a href="#">Item 3</a></li>
+                                <li><a href="#">Item 4</a></li>
+                                <li><a href="#">Item 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Code</a></li>
+                        <li><a href="#">Update</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Extension</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Learn</a></li>
+                    </ul>
+
+                    <a href="#" id="download">
+                        Download
+                    </a>
+
+                    <ul id="responsive-menu">
+                        <li><a href="#">Docs</a></li>
+                        <div id="sub-menu-toggle">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                            <li><a href="#">Item 5</a></li>
+                        </ul>
+                        <li><a href="#">Code</a></li>
+                        <li><a href="#">Update</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Extension</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Learn</a></li>
+                    </ul>
+
+                    <div id="navbar-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End header -->
+
+        <div id="content" class="container">
+            <h1>Responsive navbar website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ipsum laborum sapiente numquam?
+                Aspernatur, inventore hic? Iste repellat, nemo non minus dicta aperiam, unde saepe veritatis nam dolor
+                adipisci. Blanditiis, aut quae nam aspernatur nesciunt enim. Praesentium, cumque iusto? Quidem labore at
+                nihil voluptatum enim ratione tempore corrupti reprehenderit autem!</p>
+
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, quod provident! Distinctio nam
+                praesentium error tempora ad rem, corporis nobis! Possimus, deserunt praesentium sapiente nemo
+                exercitationem cum reiciendis. Nihil, totam.</p>
+            <p>Cum asperiores omnis maxime, ab saepe unde ex commodi illo cupiditate fugiat reiciendis recusandae
+                numquam. Ipsum molestiae, quod neque nam, ea assumenda quae fugiat, velit eos officia corrupti
+                consequuntur impedit?</p>
+            <p>Voluptatum itaque ullam voluptas eum, dolor nemo necessitatibus corporis ratione. Earum quaerat nemo odio
+                error, tempore porro molestiae numquam, illum adipisci, nam architecto reprehenderit! Sunt deserunt
+                rerum ullam ipsam ipsum?</p>
+            <p>Fugit enim tenetur eveniet laudantium illum commodi non veritatis esse ullam repellendus pariatur
+                doloribus, maxime quae est accusamus dolorum dolorem? Debitis nihil quod non maxime sed facere accusamus
+                explicabo vitae!</p>
+
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero et dolor optio temporibus, explicabo
+                perspiciatis commodi exercitationem? Rem animi et dignissimos maxime cupiditate. Doloribus voluptatem
+                repellat suscipit? Voluptate, cum nostrum.</p>
+            <p>Corrupti, obcaecati? Itaque aspernatur perspiciatis optio. Ipsam, minima! Dolore nobis corporis delectus
+                deleniti, error ipsa quas laudantium molestias eligendi dolorum neque voluptatum ratione excepturi.
+                Velit suscipit maxime repellendus officia nam?</p>
+            <p>Veniam nobis fugiat animi et corrupti quasi omnis ea quibusdam libero repellat, quam culpa rerum
+                molestiae optio, architecto perspiciatis sed consequuntur perferendis porro vitae voluptatem, blanditiis
+                nemo rem obcaecati. Hic?</p>
+            <p>Iste qui hic, consequatur est fugit veritatis provident magni tempora ipsum earum nesciunt sit placeat
+                laudantium obcaecati velit atque voluptatibus quasi sed voluptas fuga officiis porro dolore? Assumenda,
+                est debitis!</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni sed ipsa numquam expedita quis, commodi
+                voluptate sunt explicabo laudantium quos repellendus quam quas hic? Adipisci inventore ab quae nemo ut.
+            </p>
+            <p>Voluptates corporis, enim maiores porro eaque ducimus numquam, maxime explicabo quia dignissimos nemo
+                asperiores. Esse in recusandae laudantium omnis quia maxime? In, ad esse. Quibusdam pariatur impedit ut
+                quidem culpa?</p>
+            <p>Optio, voluptas maiores molestiae sit expedita itaque sunt incidunt, architecto consequuntur earum
+                sapiente quia cumque numquam ut officia recusandae distinctio explicabo ratione voluptate velit! Iusto
+                modi suscipit rem perferendis quam.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolorem doloremque, dicta iusto itaque
+                magni tempore sit enim impedit, sapiente tempora et labore exercitationem repellendus dolor architecto
+                quisquam beatae officiis.</p>
+            <p>Consectetur quibusdam laborum voluptatum, impedit inventore iusto alias laudantium soluta dicta sunt
+                dolor distinctio tenetur nostrum dolore, atque quas voluptas? Minus debitis ex dolore eos voluptatem.
+                Labore cumque molestiae consectetur.</p>
+            <p>Sed sit vitae minima nisi ex reiciendis sequi quo perspiciatis, rem deleniti reprehenderit ea ut officia,
+                totam dolorum amet provident porro sunt, atque doloremque eos. Et maxime odit voluptas ducimus.</p>
+            <p>Quia voluptas, error aliquam voluptatem dolore doloremque repudiandae repellat similique. Vel, animi
+                maxime excepturi impedit sapiente tempora, at facilis qui nam aut libero voluptatibus officia,
+                architecto ipsa veritatis eligendi quod.</p>
+            <p>Corporis ad quas minima dolore rerum fugit, recusandae dolorum cum reprehenderit itaque accusantium vitae
+                est, ipsa fuga minus voluptatibus eos ipsam omnis, pariatur harum. At nemo iste quos non pariatur.</p>
+        </div>
+
+        <!-- End content -->
+
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>
