@@ -56,7 +56,7 @@ nav {
 #main-menu {
     display: flex;
     list-style: none;
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
     margin-bottom: 0;
     display: none;
 }
@@ -64,13 +64,17 @@ nav {
 #main-menu a {
     color: #9d9d9d;
     display: block;
-    padding: 10px;
+    padding: 20px 10px;
     text-decoration: none;
     transition: all 0.25s ease-in-out;
 }
 
-#main-menu li:hover a {
+#main-menu>li:hover>a {
     color: white;
+}
+
+#main-menu li {
+    position: relative;
 }
 
 #download {
@@ -119,7 +123,7 @@ nav {
     padding-top: 15px;
     padding-bottom: 20px;
     list-style: none;
-    background-color: #3c3c43;
+    background-color: #323238;
     width: 100%;
     display: none;
 }
@@ -131,14 +135,9 @@ nav {
     display: block;
 }
 
-#responsive-menu li:hover a {
+#responsive-menu>li:hover>a,
+#responsive-menu .sub-menu li:hover a {
     color: white;
-}
-
-.sub-menu {
-    list-style: none;
-    padding-left: 0;
-    background-color: #3c3c43;
 }
 
 .sub-menu a {
@@ -146,28 +145,58 @@ nav {
 }
 
 #main-menu .sub-menu {
+    list-style: none;
+    padding-left: 0;
+    background-color: #323238;
     position: absolute;
-    top: 60px;
+    left: 0px;
+    top: 59px;
+    width: 220px;
+    padding: 15px;
     display: none;
 }
 
-.sub-menu li {
-    padding: 10px 100px 10px 10px;
+#main-menu .sub-menu a {
+    padding: 8px 15px;
 }
 
-.sub-menu li:hover {
-    background-color: #2c2c32;
-}
-
-#sub-menu-toggle {
+#main-menu .sub-menu li:hover a {
     color: white;
-    position: absolute;
-    right: 10px;
-    top: 20px;
+}
+
+#main-menu li:hover .sub-menu {
+    display: block;
 }
 
 #responsive-menu .sub-menu {
+    background-color: #38383d;
+    list-style: none;
+    padding: 5px 20px;
     display: none;
+}
+
+#responsive-menu li {
+    position: relative;
+    border: 1px solid #3c3c43;
+}
+
+#responsive-menu li:last-child {
+    border: none;
+}
+
+#responsive-menu .responsive-menu-toggle {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: white;
+    font-size: 16px;
+    padding: 11px 15px;
+    cursor: pointer;
+    transition: transform 0.25s ease-in-out;
+}
+
+#responsive-menu .responsive-menu-toggle.open {
+    transform: rotate(180deg);
 }
 
 @media (min-width: 576px) {
@@ -175,20 +204,20 @@ nav {
 }
 
 /* Medium device (tablet, 768px and up) */
-@media (min-width: 768px) {
-    
-}
+@media (min-width: 768px) {}
 
 /* Large device (desktop, 992px and up) */
 @media (min-width: 992px) {
     #download {
         display: block;
     }
+
     #main-menu {
         display: flex;
     }
 
-    #navbar-toggle, #mobile-menu {
+    #navbar-toggle,
+    #mobile-menu {
         display: none;
     }
 }

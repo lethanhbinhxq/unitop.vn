@@ -5,6 +5,8 @@ $(document).ready(function () {
 
     function hide_responsive_menu() {
         $("#responsive-menu").stop().slideUp();
+        $("#responsive-menu .sub-menu").stop().slideUp();
+        $('.responsive-menu-toggle').removeClass('open');
     }
 
     $(window).resize(function() {
@@ -14,16 +16,9 @@ $(document).ready(function () {
         hide_responsive_menu();
     });
 
-    $('#sub-menu-toggle').click(function() {
-        $(this).find('i').toggleClass("fa-angle-down fa-angle-up");
-        $('#responsive-menu .sub-menu').stop().slideToggle();
-    });
-
-    $('#main-menu li:first-child').mouseover(function() {
-        $('#main-menu .sub-menu').stop().slideDown();
-    });
-
-    $('#main-menu .sub-menu').mouseout(function() {
-        $(this).stop().slideUp();
+    $('.responsive-menu-toggle').click(function() {
+        // $(this).toggleClass("fa-angle-down fa-angle-up");
+        $(this).toggleClass('open');
+        $(this).next('.sub-menu').stop().slideToggle();
     });
 });
