@@ -1,0 +1,529 @@
+#wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============== HEADER ============== */
+
+header {
+    background: #23282d;
+    flex: 100%;
+    margin-bottom: 32px;
+}
+
+/* ----------- Logo & Search ----------- */
+header {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+/* Search */
+
+input#search-input {
+    background: #131619;
+    border: none;
+    width: 250px;
+    height: 40px;
+    color: #909090;
+    padding: 12px;
+    top: 0px;
+    right: 0px;
+}
+
+input#search-input:focus {
+    outline: none;
+    padding: 12px;
+}
+
+#search {
+    position: relative;
+}
+
+#search button {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding: 7px 10px;
+    background-color: #131619;
+    border: none;
+}
+
+#search ::placeholder {
+    color: #909090;
+}
+
+#search-icon {
+    color: #a2a1a1;
+}
+
+/* ----------- Nav bar ----------- */
+
+#header nav.navbar ul li a.nav-item {
+    color: #eeeeee;
+    display: block;
+    padding: 6px 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#header nav.navbar ul li:first-child a {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+#header nav.navbar ul li:hover a.nav-item {
+    color: #4db2ec;
+    text-decoration: none;
+}
+
+#header nav.navbar ul li a.nav-item.active {
+    color: #4db2ec;
+}
+
+#header .navbar {
+    margin-top: 9px;
+    border-right: 10px solid #ff2d2d;
+}
+
+/* ============== CONTENT ============== */
+
+#wp-content {
+    background: white;
+}
+
+/* ----------- Box Head Title ----------- */
+.box-head h3 {
+    text-transform: uppercase;
+    color: #eeeeee;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    background: #23282d;
+    display: inline-block;
+    padding: 3px 15px;
+    margin-bottom: 0;
+}
+
+/* ----------- Feature Posts ----------- */
+
+#feature .box-body {
+    border-bottom: 1px solid #dadada;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box-body ul {
+    margin-top: 20px;
+}
+
+#feature-list {
+    margin-top: 0;
+}
+
+.feature-item {
+    flex: 0 1 33%;
+    padding-bottom: 15px;
+}
+
+a.feature-text {
+    text-transform: uppercase;
+    color: #5f5f5f;
+    font-weight: 600;
+}
+
+.feature-text:hover {
+    text-decoration: none;
+    color: #4db2ec;
+}
+
+a.feature-img {
+    display: block;
+    margin-bottom: 20px;
+}
+
+a.feature-img:hover {
+    overflow: hidden;
+}
+
+.feature-img img:hover,
+.post-img img:hover {
+    transform: scale(1.05);
+    transition: all 0.25s;
+
+}
+
+/* ----------- New Posts ----------- */
+#content {
+    flex: 765px;
+    padding-right: 15px;
+}
+
+#content .box-head h3 {
+    background: #4db2ec;
+    margin-bottom: 0;
+}
+
+#content .box-head {
+    margin-top: 0;
+    border-bottom: 2px solid #4db2ec;
+}
+
+li.post-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+a.post-img {
+    display: block;
+    padding-right: 15px;
+    flex: 280px;
+    overflow: hidden;
+}
+
+.post-info {
+    flex: 68%;
+    padding-left: 15px;
+}
+
+.post-title {
+    display: block;
+    font-size: 21px;
+    font-weight: 600;
+    color: #111111;
+}
+
+.post-title:hover {
+    color: #4db2ec;
+    text-decoration: none;
+}
+
+.post-publish {
+    font-weight: 600;
+    font-size: 11px;
+    padding: 6px 0;
+}
+
+.post-author {
+    color: #111111;
+    margin-right: 10px;
+}
+
+.post-date {
+    color: #aaaaaa;
+}
+
+.post-desc {
+    font-size: 13px;
+    color: #777777;
+    margin-bottom: 0;
+}
+
+/* ----------- Sidebar ----------- */
+#sidebar {
+    flex: 375px;
+    padding-left: 15px;
+}
+
+#ads-img img {
+    margin-bottom: 40px;
+}
+
+#ads-img:hover {
+    overflow: hidden;
+    display: block;
+}
+
+#fav .box-head h3 {
+    background: #ff2d2d;
+    margin-bottom: 0;
+}
+
+#fav .box-head {
+    margin-top: 0;
+    border-bottom: 2px solid #ff2d2d;
+}
+
+li.fav-item a {
+    color: #000000;
+    padding: 6px 0;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.fav-item a span {
+    position: absolute;
+    top: 7px;
+    right: 20px;
+}
+
+.fav-item a:hover {
+    color: #ff2d2d;
+    text-decoration: none;
+}
+
+/* ============== FOOTER ============== */
+footer {
+    background: #2e2f30;
+}
+
+/* ----------- Top footer ----------- */
+#top-footer {
+    padding-top: 52px;
+    padding-bottom: 72px;
+    color: #f6f6f6;
+}
+
+#footer .box-head h3 {
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 45px;
+    font-size: 18px;
+}
+
+#footer #footer-logo {
+    flex: 280px;
+    padding-right: 15px;
+}
+
+#wp-footer-logo h3 {
+    visibility: hidden;
+}
+
+#footer #about {
+    flex: 680px;
+    padding-right: 180px;
+    padding-left: 107px;
+    font-size: 14px;
+}
+
+#footer #about a {
+    color: #4db2ec;
+}
+
+#footer #about a:hover {
+    text-decoration: none;
+}
+
+#footer #follow {
+    flex: 180px;
+    padding-right: 15px;
+}
+
+ul#social-media {
+    margin-top: 0px;
+    max-width: 165px;
+}
+
+ul#social-media li a {
+    background: #434648;
+    padding: 7px 7px;
+    color: #eeeeee;
+}
+
+ul#social-media li:hover a {
+    color: #4db2ec;
+}
+
+/* ----------- Bottom footer ----------- */
+
+#bottom-footer {
+    background-color: #222527;
+    width: 100%;
+    color: #ffffff;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#bottom-footer .navbar .nav-item {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 15px 15px;
+}
+
+#bottom-footer .navbar .nav-item:hover {
+    color: #4db2ec;
+    text-decoration: none;
+}
+
+#copyright {
+    margin-bottom: 0;
+}
+
+/* ============== RESPONSIVE MENU ============== */
+#navbar-toggle i {
+    color: white;
+    font-size: 18px;
+}
+
+#navbar-toggle {
+    cursor: pointer;
+    display: none;
+}
+
+#responsive-menu {
+    position: absolute;
+    top: 72px;
+    left: 0px;
+    padding: 10px 15px;
+    background: #23282d;
+    width: 100%;
+    display: none;
+}
+
+#responsive-menu li {
+    padding: 5px 0px;
+}
+
+#responsive-menu li a {
+    color: #eeeeee;
+}
+
+#responsive-menu li:hover a {
+    color: #4db2ec;
+    text-decoration: none;
+}
+
+@media (max-width: 767.98px) {
+    #search,
+    #main-menu {
+        display: none;
+    }
+
+    #navbar-toggle {
+        display: block;
+    }
+
+    /* Footer top */
+    #top-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #wp-footer-logo,
+    #footer #about,
+    #footer #follow {
+        flex: none;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 25px;
+    }
+
+    #footer #follow {
+        margin-bottom: 0;
+    }
+
+    #wp-footer-logo h3 {
+        display: none;
+    }
+
+    #footer #footer-logo {
+        display: inline-block;
+        padding-right: 0;
+    }
+
+    #footer #about {
+        max-width: 520px;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    #footer .box-head h3 {
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+
+    ul#social-media {
+        margin: 0 auto;
+        max-width: 180px;
+    }
+
+    ul#social-media li a {
+        display: block;
+        width: 36px;
+        height: 36px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    /* Footer bottom */
+    #bottom-footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #copyright {
+        margin-bottom: 10px;
+    }
+
+    #bottom-footer-content .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #bottom-footer-content .navbar ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #bottom-footer .navbar .nav-item {
+        display: block;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #feature-list {
+        flex-direction: column;
+    }
+
+    #feature-list .feature-item {
+        flex: 100%;
+    }
+    .feature-img img, #sidebar img {
+        width: 100%;
+    }
+
+    #fav {
+        padding-bottom: 30px;
+    }
+
+    #wp-content-sidebar {
+        flex-direction: column;
+    }
+
+    li.post-item {
+        flex-direction: column;
+    }
+    a.post-img {
+        flex: none;
+        padding-right: 0;
+    }
+    a.post-img img {
+        width: 100%;
+    }
+    .post-title {
+        padding-top: 15px;
+    }
+}
