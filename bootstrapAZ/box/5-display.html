@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Display Bootstrap</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Display Bootstrap</h1>
+                <h3>Display cho tất cả thiết bị</h3>
+                <div class="box bg-dark p-1 text-light d-inline-block">Box 1</div>
+                <div class="box bg-primary p-1 text-light d-inline-block">Box 2</div>
+
+                <h3>Display cho các thiết bị khác nhau</h3>
+                <div class="box bg-dark p-1 text-light d-none d-md-block">Box 1</div>
+                <div class="box bg-primary p-1 text-light d-none d-sm-block">Box 2</div>
+                <div class="box bg-success p-1 text-light d-none d-md-block d-lg-none">Box 3</div>
+                <div class="box bg-warning p-1 text-light">Box 4</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
