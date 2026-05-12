@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Căn giữa khối trong Bootstrap</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        .type-1 .box-child {
+            width: 100px;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Căn giữa khối trong Bootstrap</h1>
+                <h2>Cách 1</h2>
+                <div class="box-parent bg-secondary type-1">
+                    <div class="box-child mx-auto bg-success text-center">Lorem ipsum dolor sit amet.</div>
+                </div>
+
+                <h2>Cách 2</h2>
+                <div class="box-parent bg-secondary type-2 text-center">
+                    <div class="box-child bg-success d-inline-block p-3">Lorem ipsum dolor sit amet.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
