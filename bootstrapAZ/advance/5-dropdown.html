@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Dropdown Menu</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        #my-dropdown .dropdown-menu {
+            width: 300px;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Bootstrap Dropdown Menu</h1>
+                
+                <div class="dropdown float-right" id="my-dropdown">
+                    <button class="btn btn-primary dropdown-toggle" data-display="static" data-toggle="dropdown">AVATAR</button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Menu item 1</a>
+                        <a href="#" class="dropdown-item active">Menu item 2</a>
+                        <a href="#" class="dropdown-item">Menu item 3</a>
+
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-header">More menu</div>
+                        <a href="#" class="dropdown-item">Menu item 4</a>
+                        <a href="#" class="dropdown-item disabled">Menu item 5</a>
+                        <a href="#" class="dropdown-item">Menu item 6</a>
+
+                        <div class="dropdown-divider"></div>
+                        <p class="p-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae vero magnam corrupti atque esse nisi officiis minima iusto soluta aliquam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#my-dropdown').on('show.bs.dropdown', function() {
+                alert("Show");
+            });
+
+            $('#my-dropdown').on('hide.bs.dropdown', function() {
+                alert("Hide");
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
