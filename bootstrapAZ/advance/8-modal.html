@@ -16,10 +16,12 @@
 
                 <!-- Kích hoạt Modal -->
                  <button class="btn btn-primary" data-toggle="modal" data-target="#demo-modal">Show Modal</button>
+
+                 <a href="#" id="run-modal">Run Modal</a>
                 
                 <!-- Cấu trúc Modal -->
                  <div class="modal fade" id="demo-modal">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title">Demo Modal</h5>
@@ -29,7 +31,16 @@
                             </div>
                             <!-- End modal header -->
                             <div class="modal-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores minima sit mollitia eaque rerum suscipit. Quae, mollitia? Eius, tenetur reprehenderit.</p>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores minima sit mollitia eaque rerum suscipit. Quae, mollitia? Eius, tenetur reprehenderit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nisi, autem, consectetur veniam labore ut velit saepe corporis voluptatibus magni, ab harum facilis possimus. Repudiandae earum ullam ab minus praesentium sit magni libero esse, nesciunt ipsa quae hic sapiente id repellendus iure obcaecati eveniet eaque facere iste reiciendis veniam voluptatem! Non repudiandae doloribus quis vero nostrum nisi ex odio rerum delectus animi, natus ullam! Expedita laborum omnis delectus rerum quidem quasi veritatis dolor aperiam rem, animi in harum nostrum aut odio eligendi est itaque dolores voluptatibus accusamus tenetur iste nobis nesciunt! Perspiciatis labore hic mollitia corrupti. Asperiores error dicta modi exercitationem rerum veniam deleniti quia, officia perferendis quibusdam quae sint eos eaque tempore architecto laborum, dolorem facere. Nemo debitis neque consectetur possimus at obcaecati vitae. Neque amet velit eaque earum doloremque illo accusamus voluptates! Voluptatibus sequi dignissimos ducimus, quisquam eaque assumenda consequuntur? Quod ipsam fugiat repudiandae veniam inventore. Est doloribus magnam rerum, nostrum incidunt exercitationem? Nostrum placeat libero perspiciatis ipsam soluta modi saepe eaque, maxime doloribus sint beatae fugiat quis nam odit corporis ipsa harum quia est amet facere! Similique harum porro, fugiat pariatur non doloribus ut labore quos dolorum quia officiis ea qui voluptas ad sapiente quaerat totam, quae maxime sint, voluptatibus maiores minima! Suscipit minus quo laudantium nesciunt, amet, consequatur, ad voluptatem voluptas impedit cumque magnam iste error unde! Repellat, cum, eligendi commodi error nam numquam consequatur perspiciatis totam culpa exercitationem aspernatur? Porro perferendis repudiandae, dolor soluta id sapiente necessitatibus dolores at placeat hic eum vitae deserunt a ipsa deleniti! Maxime laborum, eius ipsam, nulla, quidem asperiores excepturi labore enim repellendus maiores accusamus. Commodi, sunt necessitatibus. Modi molestias ad sint expedita, fugit in doloremque sed rem enim quae aperiam animi minima ipsum nulla, corrupti voluptatem alias fugiat reiciendis atque quia! Labore dolorum ullam totam id dolores iusto odit!</p> -->
+
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 mb-3"><div class="bg-secondary">Col 12</div></div>
+                                        <div class="col-6"><div class="bg-secondary">Col 6</div></div>
+                                        <div class="col-6"><div class="bg-secondary">Col 6</div></div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- End modal body -->
                             <div class="modal-footer">
@@ -45,6 +56,27 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#run-modal').click(function() {
+                $('#demo-modal').modal();
+                return false;
+            });
+
+            $('#demo-modal').on('show.bs.modal', function() {
+                alert("Show Modal");
+            });
+            $('#demo-modal').on('shown.bs.modal', function() {
+                alert("Shown Modal");
+            });
+            $('#demo-modal').on('hide.bs.modal', function() {
+                alert("Hide Modal");
+            });
+            $('#demo-modal').on('hidden.bs.modal', function() {
+                alert("Hidden Modal");
+            });
+        });
+    </script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
