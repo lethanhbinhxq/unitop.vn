@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Form</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="text-center">Control Form</h1>
+                <form action="">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" name="username" id="username">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password" id="password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select name="category" id="category" class="form-control">
+                            <option value="">Php</option>
+                            <option value="">Bootstrap</option>
+                            <option value="">Responsive Design</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="detail">Detail</label>
+                        <textarea name="detail" id="detail" class="form-control" col="30" row="5"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="radio" name="gender" value="male" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="female" id="female">
+                        <label for="female">Female</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="filter">Lọc sản phẩm</label>
+                        <input type="range" name="filter" id="filter" class="form-control-range">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="file" name="file" id="file" class="form-control-file">
+                    </div>
+
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" name="remember-me" id="remember-me">
+                        <label for="remember-me" class="form-check-label">Remember me</label>
+                    </div>
+
+                    <button name="btn-login" class="btn btn-primary btn-block">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
