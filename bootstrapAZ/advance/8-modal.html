@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Modal</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Bootstrap Modal</h1>
+
+                <!-- Kích hoạt Modal -->
+                 <button class="btn btn-primary" data-toggle="modal" data-target="#demo-modal">Show Modal</button>
+                
+                <!-- Cấu trúc Modal -->
+                 <div class="modal fade" id="demo-modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Demo Modal</h5>
+                                <button class="close" data-dismiss="modal">
+                                    <span>&times;</span>
+                                </button>
+                            </div>
+                            <!-- End modal header -->
+                            <div class="modal-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores minima sit mollitia eaque rerum suscipit. Quae, mollitia? Eius, tenetur reprehenderit.</p>
+                            </div>
+                            <!-- End modal body -->
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                <button class="btn btn-primary">Lưu</button>
+                            </div>
+                            <!-- End modal footer -->
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
