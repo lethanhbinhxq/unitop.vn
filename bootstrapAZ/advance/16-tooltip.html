@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Tooltip</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Bootstrap Tooltip</h1>
+                <form action="">
+                    Username: <input type="text" class="mb-3" data-toggle="tooltip" title="Tên đăng nhập có 6 ký tự viết liền, không dấu">
+                    <button class="btn btn-success mb-3" data-toggle="tooltip" title="Bạn cần đặt hàng ngay để nhận ưu đãi">Đăng ký</button>
+                </form>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora ipsum nihil at repellendus esse exercitationem iste eligendi quos aspernatur quasi natus ipsam facilis provident nam dolorem quia rerum, pariatur inventore porro hic accusantium! Excepturi itaque facilis, vero consequuntur officia magnam assumenda dolore adipisci. Itaque aperiam aliquam consectetur necessitatibus laborum porro esse sunt, dolor inventore nam maiores deserunt ipsam perferendis quae veniam ipsa unde. Amet, maiores ad illo eum modi explicabo blanditiis ipsum, libero tempore cupiditate, harum velit in consequatur! Aspernatur, et ipsum non expedita veritatis quibusdam ipsam cumque odit perspiciatis illum. Esse, laboriosam saepe. Maxime nihil at minima dicta.</p>
+                <p>Lorem ipsum <a href="" data-toggle="tooltip" title="<strong>Tempore tempora</strong> ipsum nihil at" data-placement="left">dolor sit</a>, amet consectetur adipisicing elit. Veniam, qui?</p>
+                <p>Lorem ipsum <a href="" data-toggle="tooltip" title="Tempore tempora <em>ipsum nihil at</em>" data-placement="right">dolor sit</a>, amet consectetur adipisicing elit. Veniam, qui?</p>
+                <p>Lorem ipsum <a href="" data-toggle="tooltip" title="Tempore tempora ipsum nihil at" data-placement="top">dolor sit</a>, amet consectetur adipisicing elit. Veniam, qui?</p>
+                <p>Lorem ipsum <a href="" data-toggle="tooltip" title="Tempore tempora ipsum nihil at" data-placement="bottom">dolor sit</a>, amet consectetur adipisicing elit. Veniam, qui?</p>
+                <p>Lorem ipsum <a href="" data-toggle="tooltip" title="Tempore tempora ipsum nihil at">dolor sit</a>, amet consectetur adipisicing elit. Veniam, qui?</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("[data-toggle='tooltip']").tooltip({
+                placement: 'bottom',
+                trigger: 'hover focus',
+                html: true
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
